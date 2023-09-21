@@ -1,0 +1,382 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user100/Downloads/Final Project/code_files
+Yahb3lite_bus
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1695031915
+!i10b 1
+!s100 kjSUO`><W_TiFoL9jbFIz1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICOaYlScOQ93aK6S6a[LO02
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1695021806
+Z6 8ahb3lite_pkg.sv
+Z7 Fahb3lite_pkg.sv
+!i122 18
+L0 99 0
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1695031915.000000
+Z10 !s107 transaction.sv|generator.sv|ahb3lite_sram1rw.sv|ahb3lite_pkg.sv|
+Z11 !s90 ahb3lite_pkg.sv|ahb3lite_sram1rw.sv|generator.sv|transaction.sv|
+!i113 1
+Z12 tCvgOpt 0
+Xahb3lite_pkg
+R1
+R2
+!i10b 1
+!s100 iH0MzNUHgHmUUG;:b8K6`1
+R3
+IF:jS@U?40:]Dil>AeFHEM0
+VF:jS@U?40:]Dil>AeFHEM0
+S1
+R0
+R5
+R6
+R7
+!i122 18
+L0 40 0
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vahb3lite_sram1rw
+R1
+Z13 DXx4 work 12 ahb3lite_pkg 0 22 F:jS@U?40:]Dil>AeFHEM0
+R2
+!i10b 1
+!s100 e[46[h<cY<4iih[jRMU>60
+R3
+IbcNWZGD5l=;9BKA;]J_k43
+R4
+S1
+R0
+w1695021781
+8ahb3lite_sram1rw.sv
+Fahb3lite_sram1rw.sv
+!i122 18
+L0 72 316
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+Yapb_bus
+R1
+R2
+!i10b 1
+!s100 VV`>kMS^ecUV7fK?V3:DB3
+R3
+I4QnzHiFHgNlCX3gCGT]7=1
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 18
+L0 205 0
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+vpmi_ram_dp_be
+R1
+Z14 !s110 1695031603
+!i10b 1
+!s100 Yh^e9?:`VngRNiUF1]gU71
+R3
+IL2JgB[QZ3j5b^mHH>I>G02
+R4
+Z15 !s105 generator_sv_unit
+S1
+R0
+Z16 w1695021823
+Z17 8rl_ram_1r1w_lattice.sv
+Z18 Frl_ram_1r1w_lattice.sv
+!i122 11
+L0 129 32
+R8
+r1
+!s85 0
+31
+Z19 !s108 1695031602.000000
+Z20 !s107 transaction.sv|rl_ram_1rw.sv|rl_ram_1rw_generic.sv|rl_ram_1rw_easic_n3x.sv|rl_ram_1r1w.sv|rl_ram_1r1w_lattice.sv|rl_ram_1r1w_generic.sv|rl_ram_1r1w_easic_n3x.sv|rl_ram_1r1w_easic_n3xs.sv|rl_queue.sv|generator.sv|ahb3lite_sram1rw.sv|ahb3lite_pkg.sv|
+Z21 !s90 ahb3lite_pkg.sv|ahb3lite_sram1rw.sv|generator.sv|rl_queue.sv|rl_ram_1r1w_easic_n3xs.sv|rl_ram_1r1w_easic_n3x.sv|rl_ram_1r1w_generic.sv|rl_ram_1r1w_lattice.sv|rl_ram_1r1w.sv|rl_ram_1rw_easic_n3x.sv|rl_ram_1rw_generic.sv|rl_ram_1rw.sv|transaction.sv|
+!i113 1
+R12
+vrl_queue
+R1
+!s110 1695027998
+!i10b 1
+!s100 hKWGPRP8RL11ffcB<U`C10
+R3
+IVLXTN8PmN3fb6bX@<njm=1
+R4
+S1
+R0
+R16
+8rl_queue.sv
+Frl_queue.sv
+!i122 10
+L0 77 157
+R8
+r1
+!s85 0
+31
+!s108 1695027998.000000
+!s107 transaction.sv|rl_ram_1rw.sv|rl_ram_1rw_generic.sv|rl_ram_1rw_easic_n3x.sv|rl_ram_1r1w.sv|rl_ram_1r1w_lattice.sv|rl_ram_1r1w_generic.sv|rl_ram_1r1w_easic_n3x.sv|rl_ram_1r1w_easic_n3xs.sv|rl_queue.sv|ahb3lite_sram1rw.sv|ahb3lite_pkg.sv|
+!s90 ahb3lite_pkg.sv|ahb3lite_sram1rw.sv|rl_queue.sv|rl_ram_1r1w_easic_n3xs.sv|rl_ram_1r1w_easic_n3x.sv|rl_ram_1r1w_generic.sv|rl_ram_1r1w_lattice.sv|rl_ram_1r1w.sv|rl_ram_1rw_easic_n3x.sv|rl_ram_1rw_generic.sv|rl_ram_1rw.sv|transaction.sv|
+!i113 1
+R12
+vrl_ram_1r1w
+R1
+R14
+!i10b 1
+!s100 a9mzJmjhn[>AO?@GOJ4CC3
+R3
+IkO<jWlzDa7gUJDT3A41H=0
+R4
+R15
+S1
+R0
+R16
+8rl_ram_1r1w.sv
+Frl_ram_1r1w.sv
+!i122 11
+L0 69 156
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+vrl_ram_1r1w_easic_n3x
+R1
+R14
+!i10b 1
+!s100 59VA8DLUIN;8PDaQXczzA2
+R3
+IMQhEe2128HQ4^JWdkMOYk3
+R4
+R15
+S1
+R0
+R16
+8rl_ram_1r1w_easic_n3x.sv
+Frl_ram_1r1w_easic_n3x.sv
+!i122 11
+L0 67 64
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+vrl_ram_1r1w_easic_n3xs
+R1
+R14
+!i10b 1
+!s100 U<7D5A=KZdQ6i983DPEGO2
+R3
+I8jzF?5zTQ;fEZJ<>J8f[c0
+R4
+R15
+S1
+R0
+R16
+8rl_ram_1r1w_easic_n3xs.sv
+Frl_ram_1r1w_easic_n3xs.sv
+!i122 11
+L0 68 123
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+vrl_ram_1r1w_generic
+R1
+R14
+!i10b 1
+!s100 hadBCiZF^SK<oHCP2>d4H1
+R3
+I<WzR?J8c`CD?n__LUKYQ:3
+R4
+R15
+S1
+R0
+R16
+8rl_ram_1r1w_generic.sv
+Frl_ram_1r1w_generic.sv
+!i122 11
+L0 67 70
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+vrl_ram_1r1w_lattice
+R1
+R14
+!i10b 1
+!s100 dOQ<RnQNK7GAV6XP?nz>T2
+R3
+Ikgl<RQJ;P?3Ga@H22ON100
+R4
+R15
+S1
+R0
+R16
+R17
+R18
+!i122 11
+L0 69 54
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+vrl_ram_1rw
+R1
+R14
+!i10b 1
+!s100 hOSE4?_CAEfKadmg`aD8V2
+R3
+I[`4GAJXn?an6i1z53P=gJ0
+R4
+R15
+S1
+R0
+R16
+8rl_ram_1rw.sv
+Frl_ram_1rw.sv
+!i122 11
+L0 69 68
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+vrl_ram_1rw_easic_n3x
+R1
+R14
+!i10b 1
+!s100 eHRb[9JA^QUV?DO=n]]A10
+R3
+IXSY:c87=^8WYLY1H2Nkcd3
+R4
+R15
+S1
+R0
+R16
+8rl_ram_1rw_easic_n3x.sv
+Frl_ram_1rw_easic_n3x.sv
+!i122 11
+L0 67 36
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+vrl_ram_1rw_generic
+R1
+R14
+!i10b 1
+!s100 >Z8hDo5XED?zJZB>>RXA`0
+R3
+IaU_l7E@hahnoLz]2]S6BU0
+R4
+R15
+S1
+R0
+R16
+8rl_ram_1rw_generic.sv
+Frl_ram_1rw_generic.sv
+!i122 11
+L0 67 63
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R12
+Xtransaction_sv_unit
+R1
+R13
+!s110 1695031975
+VGz8;aS^0?5;W`GKLI=JK80
+r1
+!s85 0
+!i10b 1
+!s100 QzYc9@M5oH[N;VTc1`6eO1
+IGz8;aS^0?5;W`GKLI=JK80
+!i103 1
+S1
+R0
+w1695031575
+8transaction.sv
+Ftransaction.sv
+!i122 19
+L0 1 0
+R8
+31
+!s108 1695031974.000000
+!s107 transaction.sv|
+!s90 transaction.sv|
+!i113 1
+R12

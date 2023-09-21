@@ -1,0 +1,241 @@
+{
+    "MlibObjs": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 112487
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "_vcs_unit__3820026515",
+        "_vcs_unit__3820026515",
+        "std",
+        "ahb3lite_bus_inf",
+        "test",
+        "test",
+        "tbench_top",
+        "tbench_top",
+        "ahb3lite_pkg",
+        "ahb3lite_sram1rw_0000",
+        "rl_queue",
+        "rl_ram_1rw"
+    ],
+    "PrevCompiledModules": {
+        "rl_ram_1rw": {
+            "LWthU_d": {
+                "mode": 4,
+                "bytes": 18306,
+                "mod": "rl_ram_1rw",
+                "out": "LWthU_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_prev_archive_1.a"
+            }
+        },
+        "tbench_top": {
+            "Mk7In_d": {
+                "mode": 4,
+                "bytes": 12686,
+                "mod": "tbench_top",
+                "out": "Mk7In_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_36062_archive_1.a"
+            }
+        },
+        "_vcs_unit__3820026515": {
+            "a34xI_d": {
+                "mode": 4,
+                "bytes": 160084,
+                "mod": "_vcs_unit__3820026515",
+                "out": "a34xI_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_36062_archive_1.a"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "mode": 4,
+                "bytes": 41841,
+                "mod": "std",
+                "out": "reYIK_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_prev_archive_1.a"
+            }
+        },
+        "ahb3lite_pkg": {
+            "NECV5_d": {
+                "mode": 4,
+                "bytes": 6380,
+                "mod": "ahb3lite_pkg",
+                "out": "NECV5_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_prev_archive_1.a"
+            }
+        },
+        "ahb3lite_bus_inf": {
+            "I4SNz_d": {
+                "mode": 4,
+                "bytes": 81755,
+                "mod": "ahb3lite_bus_inf",
+                "out": "I4SNz_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_prev_archive_1.a"
+            }
+        },
+        "rl_queue": {
+            "xPMi9_d": {
+                "mode": 4,
+                "bytes": 25671,
+                "mod": "rl_queue",
+                "out": "xPMi9_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_prev_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "mode": 4,
+                "bytes": 10191,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "checksum": 0
+            }
+        },
+        "ahb3lite_sram1rw_0000": {
+            "KGFBM_d": {
+                "mode": 4,
+                "bytes": 54724,
+                "mod": "ahb3lite_sram1rw_0000",
+                "out": "KGFBM_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_prev_archive_1.a"
+            }
+        },
+        "test": {
+            "x9Hvb_d": {
+                "mode": 4,
+                "bytes": 33155,
+                "mod": "test",
+                "out": "x9Hvb_d.o",
+                "checksum": 0,
+                "archive": "archive.298/_36062_archive_1.a"
+            }
+        }
+    },
+    "NameTable": {
+        "tbench_top": [
+            "tbench_top",
+            "Mk7In",
+            "module"
+        ],
+        "_vcs_unit__3820026515": [
+            "_vcs_unit__3820026515",
+            "a34xI",
+            "module"
+        ],
+        "ahb3lite_pkg": [
+            "ahb3lite_pkg",
+            "NECV5",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "ahb3lite_bus_inf": [
+            "ahb3lite_bus_inf",
+            "I4SNz",
+            "module"
+        ],
+        "rl_queue": [
+            "rl_queue",
+            "xPMi9",
+            "module"
+        ],
+        "test": [
+            "test",
+            "x9Hvb",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "ahb3lite_sram1rw_0000": [
+            "ahb3lite_sram1rw_0000",
+            "KGFBM",
+            "module"
+        ],
+        "rl_ram_1rw": [
+            "rl_ram_1rw",
+            "LWthU",
+            "module"
+        ]
+    },
+    "CurCompileUdps": {},
+    "PEModules": [],
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.102323,
+            "ru_stime_sec": 0.021014999999999999,
+            "ru_maxrss_kb": 94948,
+            "ru_minflt": 7651,
+            "ru_majflt": 0,
+            "ru_nvcsw": 26,
+            "ru_nivcsw": 9
+        },
+        "nMops": 27879,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0021909999999999998,
+            "ru_stime_sec": 0.0079399999999999991,
+            "ru_maxrss_kb": 16908,
+            "ru_minflt": 848,
+            "ru_majflt": 0,
+            "ru_nvcsw": 4,
+            "ru_nivcsw": 2
+        },
+        "nQuads": 8597,
+        "mop/quad": 3.2428754216587183,
+        "totalObjSize": 318879,
+        "quadSpeed": 101971.34317028041,
+        "ru_self_end": {
+            "ru_utime_sec": 0.18663099999999999,
+            "ru_stime_sec": 0.021014999999999999,
+            "ru_maxrss_kb": 103728,
+            "ru_minflt": 10989,
+            "ru_majflt": 0,
+            "ru_nvcsw": 27,
+            "ru_nivcsw": 9
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0021909999999999998,
+            "ru_stime_sec": 0.010848,
+            "ru_maxrss_kb": 23488,
+            "ru_minflt": 1087,
+            "ru_majflt": 0,
+            "ru_nvcsw": 5,
+            "ru_nivcsw": 2
+        },
+        "mopSpeed": 330680.36248042894,
+        "outputSizePerQuad": 37.0,
+        "Frontend(%)": 54.826368609716503,
+        "CodeGen(%)": 45.173631390283504
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileProcesses": [
+        "cgproc.36062.json"
+    ],
+    "Misc": {
+        "cwd": "/home/user100/VM/code_files",
+        "csrc": "csrc",
+        "archive_dir": "archive.298",
+        "daidir_abs": "/home/user100/VM/code_files/simv.daidir",
+        "daidir": "simv.daidir",
+        "csrc_abs": "/home/user100/VM/code_files/csrc",
+        "default_output_dir": "csrc"
+    },
+    "CompileStatus": "Successful"
+}

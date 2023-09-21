@@ -1,0 +1,832 @@
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 21 14:59 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/code_files/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           1
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = xxxx,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+HSEL = x, HADDR = xxxx, HWDATA = xxxxxxxx, HWRITE = x, HSIZE = x, HBURST = x, HPROT = x, HTRANS = x, HREADY = x, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:           2
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 0, HWDATA = 66696de7, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:           3
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           4
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 4, HWDATA = 6d9de1ab, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           5
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = 6d9de1ab Actual = 6d9de1ab
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 6d9de1ab, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:           6
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 8, HWDATA = 56b899cc, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:           7
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           8
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = c, HWDATA = e1a4ccc3, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           9
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = c,
+ 	   Data :: Expected = e1a4ccc3 Actual = e1a4ccc3
+HSEL = 1, HADDR = c, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = e1a4ccc3, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:          10
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 10, HWDATA = 6ce94a5, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:          11
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          12
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 14, HWDATA = 57636169, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          13
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 14,
+ 	   Data :: Expected = 57636169 Actual = 57636169
+HSEL = 1, HADDR = 14, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 57636169, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:          14
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 18, HWDATA = 9a4265ae, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:          15
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          16
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 1c, HWDATA = 9a8977dc, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          17
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 1c,
+ 	   Data :: Expected = 9a8977dc Actual = 9a8977dc
+HSEL = 1, HADDR = 1c, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 9a8977dc, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:          18
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 0, HWDATA = e5ef8c27, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:          19
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          20
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 4, HWDATA = fb172a24, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+$finish called from file "environment.sv", line 69.
+$finish at simulation time                  395
+Simulation complete, time is 395.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 21 15:01 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/code_files/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           1
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = xxxx,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+HSEL = x, HADDR = xxxx, HWDATA = xxxxxxxx, HWRITE = x, HSIZE = x, HBURST = x, HPROT = x, HTRANS = x, HREADY = x, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:           2
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 0, HWDATA = 66696de7, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:           3
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           4
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 4, HWDATA = 6d9de1ab, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           5
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = 6d9de1ab Actual = 6d9de1ab
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 6d9de1ab, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:           6
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 8, HWDATA = 56b899cc, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:           7
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           8
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = c, HWDATA = e1a4ccc3, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           9
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = c,
+ 	   Data :: Expected = e1a4ccc3 Actual = e1a4ccc3
+HSEL = 1, HADDR = c, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = e1a4ccc3, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:          10
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 10, HWDATA = 6ce94a5, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:          11
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          12
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 14, HWDATA = 57636169, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          13
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 14,
+ 	   Data :: Expected = 57636169 Actual = 57636169
+HSEL = 1, HADDR = 14, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 57636169, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:          14
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 18, HWDATA = 9a4265ae, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:          15
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          16
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 1c, HWDATA = 9a8977dc, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          17
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 1c,
+ 	   Data :: Expected = 9a8977dc Actual = 9a8977dc
+HSEL = 1, HADDR = 1c, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 9a8977dc, HRESP = 0
+[Driver]: Value recieved in driver. Transaction:          18
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 0, HWDATA = e5ef8c27, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Driver]: Value recieved in driver. Transaction:          19
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          20
+[Scoreboard] Data successfully recieved in scoreboard
+HSEL = 1, HADDR = 4, HWDATA = fb172a24, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = x, HRDATA = xxxxxxxx, HRESP = x
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = fb172a24 Actual = fb172a24
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = fb172a24, HRESP = 0
+$finish called from file "environment.sv", line 69.
+$finish at simulation time                  395
+Simulation complete, time is 395.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 395
+CPU Time:      0.140 seconds;       Data structure size:   0.1Mb
+Thu Sep 21 15:05:57 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Thu Sep 21 15:05:57 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case7.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case7.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _29766_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .364 seconds to compile + .263 seconds to elab + .272 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 21 15:05 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/code_files/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           1
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = xxxx,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           2
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           3
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           4
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:           5
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           6
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:           7
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           8
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 8,
+ 	   Data :: Expected = xxxxe1ab Actual = xxxxe1ab
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           9
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 0,
+ 	   Data :: Expected = 66696de7 Actual = 66696de7
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          10
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          11
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          12
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:          13
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          14
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:          15
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          16
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 8,
+ 	   Data :: Expected = xxxx6169 Actual = xxxx6169
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          17
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 0,
+ 	   Data :: Expected = 6ce94a5 Actual = 6ce94a5
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          18
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          19
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          20
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+$finish called from file "environment.sv", line 69.
+$finish at simulation time                  395
+Simulation complete, time is 395.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 395
+CPU Time:      0.120 seconds;       Data structure size:   0.1Mb
+Thu Sep 21 15:42:35 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Thu Sep 21 15:42:35 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case7.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case7.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _35278_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .296 seconds to compile + .227 seconds to elab + .229 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 21 15:42 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/code_files/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           1
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = xxxx,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           2
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           3
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           4
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:           5
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           6
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:           7
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           8
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 8,
+ 	   Data :: Expected = xxxxe1ab Actual = xxxxe1ab
+[Driver]: Value recieved in driver. Transaction:           9
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 0,
+ 	   Data :: Expected = 66696de7 Actual = 66696de7
+[Driver]: Value recieved in driver. Transaction:          10
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:          11
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:          12
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          13
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:          14
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          15
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxx9a Actual = xxxxxx9a
+[Driver]: Value recieved in driver. Transaction:          16
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          17
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = c,
+ 	   Data :: Expected = 1a0a7944 Actual = 1a0a7944
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          18
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 0,
+ 	   Data :: Expected = 66696de7 Actual = 66696de7
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          19
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          20
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+$finish called from file "environment.sv", line 69.
+$finish at simulation time                  395
+Simulation complete, time is 395.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+Error: [EK-CMD-009]
+value 'No message selected.' for option '-msgid' not of type 'integer'.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 395
+CPU Time:      0.100 seconds;       Data structure size:   0.1Mb
+Thu Sep 21 16:11:39 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Thu Sep 21 16:11:39 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case7.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case7.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+	However, due to incremental compilation, only 3 modules need to be compiled. 
+recompiling package _vcs_unit__3820026515
+recompiling module test
+recompiling module tbench_top
+All of 3 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o   _36062_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .262 seconds to compile + .232 seconds to elab + .239 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 21 16:11 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/code_files/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Generator] Transaction generated successfully
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           1
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = xxxx,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           2
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           3
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           4
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:           5
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           6
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:           7
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:           8
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 8,
+ 	   Data :: Expected = xxxxe1ab Actual = xxxxe1ab
+[Driver]: Value recieved in driver. Transaction:           9
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 0,
+ 	   Data :: Expected = 66696de7 Actual = 66696de7
+[Driver]: Value recieved in driver. Transaction:          10
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:          11
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:          12
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          13
+[Scoreboard] Data successfully recieved in scoreboard
+[Driver]: Value recieved in driver. Transaction:          14
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          15
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxx9a Actual = xxxxxx9a
+[Driver]: Value recieved in driver. Transaction:          16
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          17
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = c,
+ 	   Data :: Expected = 1a0a7944 Actual = 1a0a7944
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          18
+[Scoreboard] Data successfully recieved in scoreboard
+[SCB-PASS] Addr = 0,
+ 	   Data :: Expected = 66696de7 Actual = 66696de7
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          19
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Driver]: Value recieved in driver. Transaction:          20
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+[Monitor] Data passed to scoreboard.
+[Scoreboard] Data successfully recieved in scoreboard
+$finish called from file "environment.sv", line 69.
+$finish at simulation time                  395
+Simulation complete, time is 395.
