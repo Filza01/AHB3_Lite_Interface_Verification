@@ -1,22 +1,7 @@
 {
-    "ahb3lite_sram1rw_0000": [
-        "ahb3lite_sram1rw_0000",
-        "KGFBM",
-        "module"
-    ],
     "_vcs_unit__3820026515": [
         "_vcs_unit__3820026515",
         "a34xI",
-        "module"
-    ],
-    "ahb3lite_pkg": [
-        "ahb3lite_pkg",
-        "NECV5",
-        "module"
-    ],
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
         "module"
     ],
     "std": [
@@ -24,19 +9,19 @@
         "reYIK",
         "module"
     ],
-    "test": [
-        "test",
-        "x9Hvb",
-        "module"
-    ],
     "ahb3lite_bus_inf": [
         "ahb3lite_bus_inf",
         "I4SNz",
         "module"
     ],
-    "rl_queue": [
-        "rl_queue",
-        "xPMi9",
+    "test": [
+        "test",
+        "x9Hvb",
+        "module"
+    ],
+    "ahb3lite_pkg": [
+        "ahb3lite_pkg",
+        "NECV5",
         "module"
     ],
     "tbench_top": [
@@ -44,9 +29,24 @@
         "Mk7In",
         "module"
     ],
+    "ahb3lite_sram1rw_0000": [
+        "ahb3lite_sram1rw_0000",
+        "KGFBM",
+        "module"
+    ],
+    "rl_queue": [
+        "rl_queue",
+        "xPMi9",
+        "module"
+    ],
     "rl_ram_1rw": [
         "rl_ram_1rw",
         "LWthU",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
         "module"
     ]
 }

@@ -1,7 +1,7 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/home/user100/VM/code_files
+COMPILE_PATH=/home/user100/VM/AHB3_Lite_Interface_Verification
 SystemC=FALSE
 UUM=FALSE
 KDB=FALSE

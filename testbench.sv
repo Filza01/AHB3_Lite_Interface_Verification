@@ -14,11 +14,12 @@ parameter INIT_FILE         = "";
 // `include "test_case1.sv"       // checks for random HWRITE on fixed HADDR = 4, where HREADY = 1, HBURST = 0, HSEL = 1, HTRANS = 2, HISIZE = 2
 // `include "test_case2.sv"       // first at an an address and then read from it HREADY = 1;  HBURST = 0; HSEL = 1; HTRANS = 2; HSIZE = 2;
 // `include "test_case3.sv"       // ready and wait states with HBURST = 0, HSEL = 1, HTRANS = 2, HISIZE = 2
-// `include "test_case4.sv"       // IDLE and BUSY transfer state with HBURST = 0, HSEL = 1, HISIZE = 2, HREADY = 1
+ `include "test_case4.sv"       // IDLE and BUSY transfer state with HBURST = 0, HSEL = 1, HISIZE = 2, HREADY = 1
 // `include "test_case5.sv"       // checks for HSEL = 0 with manual HADDR; HREADY = 1;  HBURST = 0; HTRANS = 2; HSIZE = 2 
 // `include "test_case6.sv"       // HREADY = 0 permanentally, with manual HADDR, HBURST = 0, HSEL = 1, HTRANS = 2, HISIZE = 2
 // `include "test_case7.sv"       // checks for different HSIZE values with manual HADDR, HREADY = 1, HBURST = 0, HSEL = 1, HTRANS = 2
-`include "test_case8.sv" 
+// `include "test_case8.sv"       // checks 4 beat wrapping burst
+// `include "test_case9.sv"       // checks 4 beat incrementing burst
 // `include "random_test.sv"
 // make one for different HSIZE values
 // make one for HRESETn

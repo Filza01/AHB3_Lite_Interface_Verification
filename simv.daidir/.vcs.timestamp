@@ -1,5 +1,8 @@
 0 
-32
+40
++itf+/usr/synopsys/vcs-L-2016.06/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
 -Mamsrun=
 -Masflags=
 -Mcc=gcc
@@ -13,13 +16,18 @@
 -Mobjects= /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so
 -Mout=simv
 -Msaverestoreobj=/usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o
--Msyslibs=-ldl
+-Msyslibs=/usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl
 -Mvcsaceobjs=
 -Mxcflags= -pipe -fPIC -I/usr/synopsys/vcs-L-2016.06/include
+-P
+-debug_access+all
+-fsdb
 -gen_obj
+-lca
 -picarchive
 -sverilog
 /usr/synopsys/vcs-L-2016.06/linux64/bin/vcs1
+/usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/verdi.tab
 design_files/ahb3lite_pkg.sv
 design_files/ahb3lite_sram1rw.sv
 design_files/rl_queue.sv
@@ -32,12 +40,21 @@ design_files/rl_ram_1rw.sv
 design_files/rl_ram_1rw_easic_n3x.sv
 design_files/rl_ram_1rw_generic.sv
 testbench.sv
-22
-sysc_uni_pwd=/home/user100/VM/code_files
+49
+sysc_uni_pwd=/home/user100/VM/AHB3_Lite_Interface_Verification
+binpath=/usr/synopsys/vcs-L-2016.06//gui/dve/linux64/bin
+XDG_MENU_PREFIX=xfce-
+XDG_DATA_DIRS=/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=XFCE
+XDG_CONFIG_DIRS=/etc/xdg
+VTE_VERSION=5202
+VNCDESKTOP=lizhen:2 (nasir)
 VMR_MODE_FLAG=32
 VERDI_HOME=/usr/synopsys/verdi-L-2016.06-1
 VCS_TARGET_ARCH=amd64
+VCS_PATHMAP_PRELOAD_DONE=1
 VCS_MX_HOME_INTERNAL=1
+VCS_LCAMSG_PRINT_OFF=1
 VCS_HOME=/usr/synopsys/vcs-L-2016.06/
 VCS_DEPTH=0
 VCS_ARG_ADDED_FOR_TMP=1
@@ -46,24 +63,42 @@ VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/usr/synopsys/vcs-L-2016.06/linux64
 TCP_NODELAY=YES
+TCLLIBPATH=/usr/synopsys/vcs-L-2016.06//gui/dve/auxx/tcllib/lib/tcl8.4 /usr/synopsys/vcs-L-2016.06//gui/dve/auxx/tcllib/snps_tcl
 SYNOPSYS=/usr/synopsys/
+SSH_AUTH_SOCK=/tmp/ssh-VTRMmjcAX86e/agent.49
+SSH_AGENT_PID=50
 SPYGLASS_HOME=/usr/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME
 SPYGLASS_DC_PATH=/usr/synopsys/dc-L-2016.03-SP1/
+SPECMAN_OUTPUT_TO_TTY=1
+SESSION_MANAGER=local/lizhen:@/tmp/.ICE-unix/40,unix/lizhen:/tmp/.ICE-unix/40
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 OVA_UUM=0
+MDB_SIM_ARGS=-simwarn
+MARCH=linux64
 LESSOPEN=| /usr/bin/lesspipe %s
 LESSCLOSE=/usr/bin/lesspipe %s %s
 LC_ALL=C
+GLADE_PIXMAP_PATH=:
+GLADE_MODULE_PATH=:
+GLADE_CATALOG_PATH=:
+DVE_SIM_SELECT_LOOP=on
+DVE_PSTACK=gstack
+DVE_AUXX_GUI=/usr/synopsys/vcs-L-2016.06//gui/dve/auxx/gui
+DVE=/usr/synopsys/vcs-L-2016.06//gui/dve
+DESKTOP_SESSION=xfce
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-x3JXyZM3fi,guid=fe36c3950dced2f343289713650c1ddf
+COLORTERM=truecolor
+CMD=/usr/synopsys/vcs-L-2016.06//gui/dve/linux64/bin/dve.exe
 0
-20
+22
 1695280131 scoreboard.sv
-1695281485 monitor.sv
-1695281466 driver.sv
+1695297161 monitor.sv
+1695297165 driver.sv
 1695196792 generator.sv
 1695208998 transaction.sv
 1695281491 environment.sv
-1695282453 test_case7.sv
+1695208775 test_case4.sv
 1695196905 interface.sv
 1695021823 design_files/rl_ram_1rw_generic.sv
 1695021823 design_files/rl_ram_1rw_easic_n3x.sv
@@ -76,10 +111,12 @@ LC_ALL=C
 1695021823 design_files/rl_queue.sv
 1695100541 design_files/ahb3lite_sram1rw.sv
 1695039308 design_files/ahb3lite_pkg.sv
-1695283893 testbench.sv
+1695298738 testbench.sv
+1468145700 /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/verdi.tab
+1464145466 /usr/synopsys/vcs-L-2016.06/linux64/lib/vcsdp_lite.tab
 4
 0 
 1464147802 /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so
 1464147272 /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so
 1464147248 /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so
-1695283915 simv.daidir
+1695298855 simv.daidir
