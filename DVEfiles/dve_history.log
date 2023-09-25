@@ -58,73 +58,266 @@ gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -va
 gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
 gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|BuildTab|m_rebuildBtnGroup|m_customCmdCombo} -value_type string -value {{vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv} {vcs -lca -debug_access+all -sverilog testbench1.sv design_files/*.sv} {vcs -lca -debug_access+all -sverilog memory.sv testbench.sv } {vcs -lca -debug_access+all -sverilog testbench.sv} {vcs -lca -debug_access+all -sverilog gates.sv testbench3.sv}}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|BuildTab|m_rebuildBtnGroup|m_customDirCombo} -value_type string -value {/home/user100/VM/code_files/ /home/user100/VM/tb3/ /home/user100/VM/}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|BuildTab|m_rebuildBtnGroup|m_customDirCombo} -value_type string -value {/home/user100/VM/AHB3_Lite_Interface_Verification/ /home/user100/VM/code_files/ /home/user100/VM/tb3/ /home/user100/VM/}
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
 gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui }}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/user100/VM/code_files /home/user100/VM/tb_mem /home/user100/VM/tb3 /home/user100/VM}
-gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/user100/VM/code_files/simv ./simv /home/user100/VM/tb_mem/simv /home/user100/VM/tb3/simv /home/user100/VM/simv}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/user100/VM/AHB3_Lite_Interface_Verification /home/user100/VM/code_files /home/user100/VM/tb_mem /home/user100/VM/tb3 /home/user100/VM}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/user100/VM/AHB3_Lite_Interface_Verification/simv ./simv /home/user100/VM/code_files/simv /home/user100/VM/tb_mem/simv /home/user100/VM/tb3/simv}
 gui_state_default_create -off
 
 # Begin command logging
 gui_set_pref_value -category {Globals} -key {smart_resize} -value {false}
 gui_set_pref_value -category {Globals} -key {smart_resize} -value {true}
 gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_set_env SIMSETUP::SIMCURRENTDIR /home/user100/VM/AHB3_Lite_Interface_Verification
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
 gui_list_expand -id  Hier.1   tbench_top
 gui_list_select -id Hier.1 -current_item_name tbench_top.intf -current_item_type Scope  -selected  { tbench_top.intf   }
 gui_open_window Wave
 gui_list_add -id Wave.1 -from Hier.1 { tbench_top.intf } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 315
 gui_sim_continue  
-gui_zoom -window Wave.1 -full
-gui_marker_move -id  Wave.1 C1 46
-gui_marker_select -id  Wave.1 { C1 }
-gui_marker_move -id  Wave.1 C1 85
-gui_marker_move -id  Wave.1 C1 107
-gui_set_env SIMSETUP::SIMCURRENTDIR /home/user100/VM/AHB3_Lite_Interface_Verification
+gui_wv_scroll_hslidermove -id  Wave.1 714
+gui_wv_scrollleft -id  Wave.1  page
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_select -id Wave.1 -selected  { tbench_top.intf.HCLK   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after intf {{tbench_top.intf.HCLK}}
+gui_list_select -id Wave.1 -selected  { {tbench_top.intf.HTRANS[1:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tbench_top.intf.HCLK {{tbench_top.intf.HTRANS[1:0]}} 
+gui_list_select -id Wave.1 -selected  { {tbench_top.intf.HBURST[2:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tbench_top.intf.HADDR[15:0]} {{tbench_top.intf.HBURST[2:0]}} 
+gui_list_select -id Wave.1 -selected  { tbench_top.intf.HREADY   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tbench_top.intf.HBURST[2:0]} {{tbench_top.intf.HREADY}} 
+gui_list_select -id Wave.1 -selected  { {tbench_top.intf.HRDATA[31:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tbench_top.intf.HREADY {{tbench_top.intf.HRDATA[31:0]}} 
+gui_list_select -id Wave.1 -selected  { tbench_top.intf.HWRITE   }
+gui_marker_move -id  Wave.1 C1 15
+gui_marker_move -id  Wave.1 C1 25
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 15
+gui_marker_move -id  Wave.1 C1 5
+gui_marker_move -id  Wave.1 C1 15
+gui_marker_move -id  Wave.1 C1 25
+gui_marker_move -id  Wave.1 C1 15
+gui_wv_scroll_hslidermove -id  Wave.1 0
 gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
 gui_sim_continue  
 gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 24
-gui_marker_move -id  Wave.1 C1 43
+gui_marker_move -id  Wave.1 C1 35
+gui_marker_move -id  Wave.1 C1 45
 gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
 gui_sim_continue  
-gui_zoom -window Wave.1 -full
-gui_marker_move -id  Wave.1 C1 31
+gui_wv_scroll_hslidermove -id  Wave.1 0
 gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
 gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 37
-gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
-gui_sim_continue  
-gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 0
 gui_wv_scroll_hslidermove -id  Wave.1 0
 gui_marker_move -id  Wave.1 C1 16
 gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
 gui_sim_continue  
 gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_list_select -id Wave.1 -selected  { tbench_top.intf.HCLK   }
-gui_list_move  -id  Wave.1    -sid  Wave.1   -after intf {{tbench_top.intf.HCLK}}
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 6
+gui_marker_move -id  Wave.1 C1 15
+gui_marker_move -id  Wave.1 C1 9
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 1855
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 9
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 15
+gui_marker_move -id  Wave.1 C1 15
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 16
+gui_marker_move -id  Wave.1 C1 25
+gui_marker_move -id  Wave.1 C1 35
+gui_marker_move -id  Wave.1 C1 45
+gui_marker_move -id  Wave.1 C1 55
+gui_marker_move -id  Wave.1 C1 65
+gui_marker_move -id  Wave.1 C1 55
+gui_marker_move -id  Wave.1 C1 65
+gui_marker_move -id  Wave.1 C1 55
+gui_marker_move -id  Wave.1 C1 10
+gui_marker_move -id  Wave.1 C1 15
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 11
+gui_marker_move -id  Wave.1 C1 14
+gui_marker_move -id  Wave.1 C1 5
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scrollleft -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 16
+gui_marker_move -id  Wave.1 C1 5
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 684
+gui_wv_scrollleft -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 15
+gui_marker_move -id  Wave.1 C1 76
+gui_marker_move -id  Wave.1 C1 55
+gui_marker_move -id  Wave.1 C1 65
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 76
+gui_wv_scroll_hslidermove -id  Wave.1 385
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 129
+gui_marker_move -id  Wave.1 C1 76
+gui_marker_move -id  Wave.1 C1 96
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 76
+gui_marker_move -id  Wave.1 C1 120
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 85
+gui_marker_move -id  Wave.1 C1 95
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 108
+gui_marker_move -id  Wave.1 C1 109
+gui_marker_move -id  Wave.1 C1 107
+gui_marker_move -id  Wave.1 C1 110
+gui_marker_move -id  Wave.1 C1 101
+gui_marker_move -id  Wave.1 C1 103
+gui_marker_move -id  Wave.1 C1 104
+gui_marker_move -id  Wave.1 C1 105
+gui_marker_move -id  Wave.1 C1 85
+gui_marker_move -id  Wave.1 C1 95
+gui_marker_move -id  Wave.1 C1 85
+gui_marker_move -id  Wave.1 C1 95
+gui_marker_move -id  Wave.1 C1 105
+gui_marker_move -id  Wave.1 C1 90
+gui_marker_move -id  Wave.1 C1 85
+gui_marker_move -id  Wave.1 C1 95
+gui_marker_move -id  Wave.1 C1 105
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 105
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 15
+gui_wv_zoom_timerange -id  Wave.1 0 208
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 25
+gui_marker_move -id  Wave.1 C1 35
+gui_marker_move -id  Wave.1 C1 45
+gui_marker_move -id  Wave.1 C1 55
+gui_marker_move -id  Wave.1 C1 65
+gui_marker_move -id  Wave.1 C1 55
+gui_marker_move -id  Wave.1 C1 20
+gui_marker_move -id  Wave.1 C1 25
+gui_marker_move -id  Wave.1 C1 60
+gui_marker_move -id  Wave.1 C1 70
+gui_marker_move -id  Wave.1 C1 80
+gui_marker_move -id  Wave.1 C1 95
+gui_marker_move -id  Wave.1 C1 90
+gui_marker_move -id  Wave.1 C1 85
+gui_marker_move -id  Wave.1 C1 95
+gui_marker_move -id  Wave.1 C1 105
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scrollleft -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 10
 gui_marker_move -id  Wave.1 C1 15
 gui_marker_move -id  Wave.1 C1 25
 gui_marker_move -id  Wave.1 C1 35
 gui_marker_move -id  Wave.1 C1 45
 gui_marker_move -id  Wave.1 C1 55
 gui_marker_move -id  Wave.1 C1 65
+gui_wv_scroll_hslidermove -id  Wave.1 117
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 55
+gui_marker_move -id  Wave.1 C1 65
 gui_marker_move -id  Wave.1 C1 75
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
-gui_sim_continue  
-gui_wv_scroll_hslidermove -id  Wave.1 721
-gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 9
+gui_marker_move -id  Wave.1 C1 10
 gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
 gui_sim_continue  
 gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 59
-gui_marker_move -id  Wave.1 C1 73
+gui_marker_move -id  Wave.1 C1 5
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scrollleft -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 15
+gui_marker_move -id  Wave.1 C1 25
+gui_wv_scroll_hslidermove -id  Wave.1 88
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 291
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 69
+gui_wv_scroll_hslidermove -id  Wave.1 589
+gui_marker_move -id  Wave.1 C1 115
+gui_marker_move -id  Wave.1 C1 125
+gui_marker_move -id  Wave.1 C1 135
+gui_wv_scroll_hslidermove -id  Wave.1 806
+gui_wv_scrollleft -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 24
 gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
 gui_sim_continue  
 gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_wv_scroll_hslidermove -id  Wave.1 407
+gui_wv_scroll_hslidermove -id  Wave.1 841
+gui_wv_scroll_hslidermove -id  Wave.1 422
 gui_marker_move -id  Wave.1 C1 95
-gui_wv_scroll_hslidermove -id  Wave.1 188
-gui_marker_move -id  Wave.1 C1 85
-gui_wv_scroll_hslidermove -id  Wave.1 780
+gui_marker_move -id  Wave.1 C1 96
+gui_marker_move -id  Wave.1 C1 102
+gui_marker_move -id  Wave.1 C1 105
+gui_wv_scroll_hslidermove -id  Wave.1 637
+gui_marker_move -id  Wave.1 C1 115
+gui_marker_move -id  Wave.1 C1 125
+gui_marker_move -id  Wave.1 C1 96
+gui_marker_move -id  Wave.1 C1 106
+gui_marker_move -id  Wave.1 C1 105
+gui_marker_move -id  Wave.1 C1 115
+gui_marker_move -id  Wave.1 C1 125
+gui_marker_move -id  Wave.1 C1 115
+gui_marker_move -id  Wave.1 C1 105
+gui_marker_move -id  Wave.1 C1 115
+gui_marker_move -id  Wave.1 C1 125
+gui_marker_move -id  Wave.1 C1 105
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 727
+gui_marker_move -id  Wave.1 C1 146
+gui_marker_move -id  Wave.1 C1 155
+gui_wv_scroll_hslidermove -id  Wave.1 628
+gui_sim_restart -build {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
+gui_sim_continue  
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 6
+gui_marker_move -id  Wave.1 C1 16
+gui_marker_move -id  Wave.1 C1 22
+gui_marker_move -id  Wave.1 C1 36
+gui_marker_move -id  Wave.1 C1 43

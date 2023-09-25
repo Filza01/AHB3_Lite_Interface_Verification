@@ -4,13 +4,12 @@ class driver;
     int no_transactions;                    //used to count the number of transactions
     virtual ahb3lite_bus_inf vif;               //creating virtual interface handle
     mailbox gen2driv;                       //creating mailbox handle
-    
-    //event drv_done;
+    event drv_done;
   //constructor
-    function new(input virtual ahb3lite_bus_inf vif, input mailbox gen2driv); //, input event drv_done);
+    function new(input virtual ahb3lite_bus_inf vif, input mailbox gen2driv, input event drv_done);
         this.vif = vif;       //getting the interface
         this.gen2driv = gen2driv;     //getting the mailbox handles from  environment
-        //this.drv_done = drv_done;
+        this.drv_done = drv_done;
         //trans = new();
     endfunction
   
@@ -35,7 +34,7 @@ class driver;
     task drive;
         transaction trans;
         gen2driv.get(trans);
-        @(posedge vif.DRIVER.HCLK);
+        //@(posedge vif.DRIVER.HCLK);
         `DRIV_IF.HADDR <= trans.HADDR;
         `DRIV_IF.HSEL <= trans.HSEL; // 1;
         `DRIV_IF.HSIZE <= trans.HSIZE; // 2;
@@ -47,28 +46,25 @@ class driver;
         if (trans.HWRITE && trans.HREADY) begin
             @(posedge vif.DRIVER.HCLK);
             `DRIV_IF.HWDATA <= trans.HWDATA;
+            //@(posedge vif.DRIVER.HCLK);
         end
+        else begin
+            @(posedge vif.DRIVER.HCLK);
+        end
+        $info("[Driver]: Value recieved in driver. Transaction: %d", no_transactions);
         no_transactions++;
-        $display("[Driver]: Value recieved in driver. Transaction: %d", no_transactions);
         //trans.print_trans();
-        // -> drv_done;
+        #1;
+        -> drv_done;
     endtask
 
     task main;
-        forever begin
-            fork
-                //Thread-1: Waiting for reset
-            // begin
-            //   wait(!mem_vif.reset);
-            // end
-        //Thread-2: Calling drive task
-            begin
-                forever
-                    drive();
-            end
-            join_any
-            disable fork;
-        end
+        wait(vif.HRESETn);
+        
+        forever
+            drive();
+    
+
     endtask
         
 endclass

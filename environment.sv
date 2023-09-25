@@ -20,7 +20,7 @@ class environment;
   
   //event for synchronization between generator and test
   event gen_ended;
-  //event drv_done;
+  event drv_done;
   
   //virtual interface
   virtual ahb3lite_bus_inf vif;
@@ -36,8 +36,8 @@ class environment;
     
     //creating generator and driver
     gen  = new(gen2driv,gen_ended);
-    driv = new(vif,gen2driv); //,drv_done);
-    mon  = new(vif,mon2scb); //,drv_done);
+    driv = new(vif,gen2driv,drv_done);
+    mon  = new(vif,mon2scb,drv_done);
     scb  = new(mon2scb);
   endfunction
   
@@ -58,6 +58,8 @@ class environment;
   task post_test();
     wait(gen_ended.triggered);
     wait(gen.repeat_count == driv.no_transactions);
+    // $display("driv.no_transactions = %d", driv.no_transactions);
+    // $display("scb.no_transactions = %d", scb.no_transactions);
     wait(gen.repeat_count == scb.no_transactions);
   endtask  
   

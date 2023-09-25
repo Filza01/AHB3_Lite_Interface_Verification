@@ -19,7 +19,7 @@ class generator;
         if( !trans.randomize() ) $fatal("Gen:: trans randomization failed");      
         tr = trans.copy();
         gen2driv.put(tr);
-        $display("[Generator] Transaction generated successfully");
+        $info("[Generator] Transaction generated successfully");
         //trans.print_trans();
       end
       -> ended; 

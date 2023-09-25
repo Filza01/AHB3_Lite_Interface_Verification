@@ -4,13 +4,13 @@ class monitor;
     virtual ahb3lite_bus_inf vif;                //creating virtual interface handle
     mailbox mon2scb;                     //creating mailbox handle
     
-    //event drv_done;
+    event drv_done;
   
     //constructor
-    function new(input virtual ahb3lite_bus_inf vif, input mailbox mon2scb); //input event drv_done);
+    function new(input virtual ahb3lite_bus_inf vif, input mailbox mon2scb, input event drv_done);
         this.vif = vif;             //getting the interface
         this.mon2scb = mon2scb;     //getting the mailbox handles from  environment 
-        //this.drv_done = drv_done;
+        this.drv_done = drv_done;
     endfunction
   
   //Samples the interface signal and send the sample packet to scoreboard
@@ -18,8 +18,7 @@ class monitor;
         forever begin
             transaction t;
             t = new();
-            @(posedge vif.MONITOR.HCLK);
-            //wait(vif.MONITOR.HRESETn);
+            @(drv_done);
             t.HSEL = `MON_IF.HSEL;
             t.HADDR = `MON_IF.HADDR;
             t.HWRITE = `MON_IF.HWRITE;
@@ -32,14 +31,16 @@ class monitor;
                 @(posedge vif.MONITOR.HCLK);
                 t.HWDATA = `MON_IF.HWDATA;
             end
-            else begin
+            else begin 
                 @(posedge vif.MONITOR.HCLK);
-                t.HREADYOUT = `MON_IF.HREADYOUT;
-                t.HRDATA = `MON_IF.HRDATA;
-                t.HRESP = `MON_IF.HRESP;
+                if (`MON_IF.HREADY) begin
+                    t.HRDATA = `MON_IF.HRDATA;  
+                end
             end
+            t.HREADYOUT = `MON_IF.HREADYOUT;
+            t.HRESP = `MON_IF.HRESP;
             mon2scb.put(t);
-            $display("[Monitor] Data passed to scoreboard.");
+            $info("[Monitor] Data passed to scoreboard.");
             //$display("reset = %d", vif.HRESETn);
             //t.print_trans();
         end

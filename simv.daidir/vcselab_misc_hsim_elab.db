@@ -232,7 +232,7 @@ fHsimNewEvcdObnDrv                 	0
 fHsimEvcdDbgFlags                  	0
 fHsimDumpElabData                  	1
 fHsimNoDeposit                     	0
-fHsimDumpOffsetData                	1
+fHsimDumpOffsetData                	0
 fNoOfsOpt                          	0
 fHsimSeqReconstAllNodes            	0
 fHsimDynamicElab                   	1
@@ -304,7 +304,7 @@ fHsimRemoveDbgCaps                 	0
 fHsimAllowVecGateInVpd             	1
 fHsimAllowAllVecGateInVpd          	0
 fHsimAllowUdpInVpd                 	1
-fHsimAllowAlwaysCombInVpd          	1
+fHsimAllowAlwaysCombInVpd          	0
 fHsimAllowAlwaysCombCmpDvcSimv     	0
 fHsimAllowAlwaysCombDbg            	0
 fHsimMakeAllP2SPrimary             	0
@@ -314,7 +314,7 @@ fVpdSeqGate                        	0
 fVpdOptAllowConstDriver            	0
 fRaptorProf                        	0
 fHsimVpdOptGateMustDisable         	0
-fHsimVpdOptGate                    	1
+fHsimVpdOptGate                    	0
 fHsimVpdOptDelay                   	0
 fHsimVpdOptMPDelay                 	0
 fHsimVpdOptDiag                    	0
@@ -628,7 +628,7 @@ fHsimMdbNewDebugOptExitOnError     	1
 fHsimNewDebugOptMemDiag            	0
 hsGlobalVerboseLevel               	0
 fHsimMdbVectorConstProp            	1
-fHsimEnableSeqUdpWrite             	1
+fHsimEnableSeqUdpWrite             	0
 fEnableNewFinalStrHash             	0
 fEnableNewAssert                   	1
 fRunDbgDmma                        	0
@@ -712,7 +712,7 @@ fHsimDumpMdbPruneVpdGates          	0
 fHsimGates1209                     	0
 fHsimCgRtlNoShareSmd               	0
 fHsimGenForErSum                   	0
-fVpdOpt                            	1
+fVpdOpt                            	0
 fHsimMdbCell                       	0
 fHsimCellDebug                     	0
 fHsimMdbCellComplexity             	1.500000
@@ -736,9 +736,9 @@ fHsimVpdGateOnlyFlag               	1
 fHsimMxConnFrc                     	0
 fHsimNewForceCbkVec                	0
 fHsimNewForceCbkVecDiag            	0
-fHsimMdbReplaceVpdHighConn         	1
+fHsimMdbReplaceVpdHighConn         	0
 fHsimVpdHighConnReplaced           	0
-fHsimVpdOptSVTypes                 	1
+fHsimVpdOptSVTypes                 	0
 fHsimDlyInitFrc                    	0
 fHsimCompactVpdFn                  	1
 fHsimPIP                           	0
@@ -773,7 +773,7 @@ fHsimVpdOptAlways                  	1
 fHsimVpdOptMdbCell                 	0
 fHsimVpdOptPartialMdb              	1
 fHsimVpdOptPartitionGate           	1
-fHsimVpdOptXmr                     	1
+fHsimVpdOptXmr                     	0
 fHsimVpdOptConst                   	1
 fHsimVpdHilRtl                     	0
 fHsimSWave                         	0
@@ -848,7 +848,7 @@ fAssertSuccDebugLevelDump          	0
 fHsimMinputsChangeCheck            	0
 fHsimClkLayout                     	0
 fHsimSelectFuseAfterDfuse          	0
-fNettypeDbgOpt                     	4
+fNettypeDbgOpt                     	0
 fHsimFoldedCell                    	0
 fHsimSimon2Mdb                     	0
 fHsimSWaveEmul                     	0

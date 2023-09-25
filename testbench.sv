@@ -11,15 +11,21 @@ parameter INIT_FILE         = "";
 //----------------------------------------------------------
 
 // including test files ------------------------------------        
-// `include "test_case1.sv"       // checks for random HWRITE on fixed HADDR = 4, where HREADY = 1, HBURST = 0, HSEL = 1, HTRANS = 2, HISIZE = 2
-// `include "test_case2.sv"       // first at an an address and then read from it HREADY = 1;  HBURST = 0; HSEL = 1; HTRANS = 2; HSIZE = 2;
-// `include "test_case3.sv"       // ready and wait states with HBURST = 0, HSEL = 1, HTRANS = 2, HISIZE = 2
- `include "test_case4.sv"       // IDLE and BUSY transfer state with HBURST = 0, HSEL = 1, HISIZE = 2, HREADY = 1
+`include "test_case1.sv"       // checks for random HWRITE on fixed HADDR = 4, where HREADY = 1, HBURST = 0, HSEL = 1, HTRANS = 2, HISIZE = 2
+// `include "test_case2.sv"       // testing  write WORD case, first at an an address and then read from it HREADY = 1;  HBURST = 0; HSEL = 1; HTRANS = 2; HSIZE = 2;
+// `include "test_case3.sv"       // ready and wait states with HBURST = 0, HSEL = 1, HTRANS = 2, HISIZE = 2 ----------
+// `include "test_case4.sv"       // IDLE and BUSY transfer state with HBURST = 0, HSEL = 1, HISIZE = 2, HREADY = 1
 // `include "test_case5.sv"       // checks for HSEL = 0 with manual HADDR; HREADY = 1;  HBURST = 0; HTRANS = 2; HSIZE = 2 
 // `include "test_case6.sv"       // HREADY = 0 permanentally, with manual HADDR, HBURST = 0, HSEL = 1, HTRANS = 2, HISIZE = 2
 // `include "test_case7.sv"       // checks for different HSIZE values with manual HADDR, HREADY = 1, HBURST = 0, HSEL = 1, HTRANS = 2
 // `include "test_case8.sv"       // checks 4 beat wrapping burst
 // `include "test_case9.sv"       // checks 4 beat incrementing burst
+// `include "test_case10.sv"      // write WORD on manual addresses with HSIZE = 2 and read BYTE, HALFWORD and WORD from that addresses with HSIZE = 0,1
+// `include "test_case11.sv"      // checks for wait transfers on IDLE state, this test should fail 
+// `include "test_case12.sv"      // testing write BYTE case
+// `include "test_case13.sv"      // testing write HALFWORD case
+// `include "test_case14.sv"      // check for IDLE, BUSY, SEQ and NONSEQ Transfers
+// `include "test_case15.sv"      // check for any other remaining tests
 // `include "random_test.sv"
 // make one for different HSIZE values
 // make one for HRESETn
@@ -43,7 +49,7 @@ module tbench_top();
   //reset Generation
   initial begin
     HRESETn = 0;
-    #3 HRESETn = 1;
+    #5 HRESETn = 1;
   end
   
   //DUT instance, interface signals are connected to the DUT ports
