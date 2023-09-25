@@ -15,47 +15,54 @@ program test(ahb3lite_bus_inf intf);
       HSEL = 1;
       HSIZE = 2;
       HBURST = 0;
-      HREADY = 1;
 
       if (count == 1) begin
         HADDR = 4;
         HWRITE = 1;
         HTRANS = 0;
+        HREADY = 0;
       end
       else if (count == 2) begin
         HADDR = 4;
         HWRITE = 1;
         HTRANS = 1;
+        HREADY = 0;
       end
       else if (count == 3) begin
         HADDR = 4;
         HWRITE = 1;
         HTRANS = 2;
+        HREADY = 1;
       end
       else if (count == 4) begin
         HADDR = 4;
         HWRITE = 0;
         HTRANS = 0;
+        HREADY = 0;
       end
       else if (count == 5) begin
         HADDR = 4;
         HWRITE = 0;
         HTRANS = 1;
+        HREADY = 0;
       end
       else if (count == 6) begin
         HADDR = 4;
         HWRITE = 0;
         HTRANS = 1;
+        HREADY = 0;
       end
       else if (count == 7) begin
         HADDR = 4;
         HWRITE = 0;
         HTRANS = 2;
+        HREADY = 1;
       end
       else begin
         HADDR = 4;
         HWRITE = 1;
         HTRANS = 0;
+        HREADY = 0;
       end
       count++;
 

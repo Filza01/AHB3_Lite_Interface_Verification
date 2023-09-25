@@ -1,5 +1,5 @@
 class c_1_2;
-    rand bit[7:0] HADDR = 8'h3; // rand_mode = OFF 
+    rand bit[15:0] HADDR = 16'ha; // rand_mode = OFF 
     rand bit[2:0] HSIZE = 3'h2; // rand_mode = OFF 
 
     constraint C_HADDR_align_with_HSIZE_this    // (constraint_mode = ON) (transaction.sv:23)
@@ -15,7 +15,7 @@ program p_1_2;
     initial
         begin
             obj = new;
-            randState = "xxx0001x00x00zzzzxxzz1xx101zx01xxxzzxzxzzzxxxzxzzzzzxxxxzxxxxxxx";
+            randState = "100z0x1xzx0x11zxz0z1zxz0xxz00000xzzxzxxzxxxxzzxzzxxzxzxxxxxxxzzz";
             obj.set_randstate(randState);
             obj.HADDR.rand_mode(0);
             obj.HSIZE.rand_mode(0);

@@ -15,10 +15,12 @@ class monitor;
   
   //Samples the interface signal and send the sample packet to scoreboard
     task main;
+        // @(posedge vif.MONITOR.HCLK);
         forever begin
             transaction t;
             t = new();
             @(drv_done);
+            //@(posedge vif.MONITOR.HCLK);
             t.HSEL = `MON_IF.HSEL;
             t.HADDR = `MON_IF.HADDR;
             t.HWRITE = `MON_IF.HWRITE;
@@ -32,8 +34,8 @@ class monitor;
                 t.HWDATA = `MON_IF.HWDATA;
             end
             else begin 
-                @(posedge vif.MONITOR.HCLK);
                 if (`MON_IF.HREADY) begin
+                    @(posedge vif.MONITOR.HCLK);
                     t.HRDATA = `MON_IF.HRDATA;  
                 end
             end

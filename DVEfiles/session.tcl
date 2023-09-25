@@ -1,11 +1,12 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Thu Sep 21 14:59:13 2023
+# Saved on Mon Sep 25 19:26:38 2023
 # Designs open: 1
-#   Sim: /home/user100/VM/code_files/simv
+#   Sim: /home/user100/VM/AHB3_Lite_Interface_Verification/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: 
+#   Memory.1: 
 #   Group count = 0
 # End_DVE_Session_Save_Info
 
@@ -13,7 +14,7 @@
 # DVE build date: May 24 2016 21:01:02
 
 
-#<Session mode="Full" path="/home/user100/VM/code_files/DVEfiles/session.tcl" type="Debug">
+#<Session mode="Full" path="/home/user100/VM/AHB3_Lite_Interface_Verification/DVEfiles/session.tcl" type="Debug">
 
 gui_set_loading_session_type Post
 gui_continuetime_set
@@ -106,28 +107,28 @@ gui_hide_toolbar -toolbar {Testbench}
 # End ToolBar settings
 
 # Docked window settings
-set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 157]
+set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 156]
 catch { set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier] }
 catch { set Stack.1 [gui_share_window -id ${HSPane.1} -type Stack -silent] }
 catch { set Class.1 [gui_share_window -id ${HSPane.1} -type Class -silent] }
 catch { set Object.1 [gui_share_window -id ${HSPane.1} -type Object -silent] }
-gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 157
+gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 156
 gui_set_window_pref_key -window ${HSPane.1} -key dock_height -value_type integer -value -1
 gui_set_window_pref_key -window ${HSPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 156} {height 291} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 202]
+gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 155} {height 292} {dock_state left} {dock_on_new_line true} {child_hier_colhier 140} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 201]
 catch { set Data.1 [gui_share_window -id ${DLPane.1} -type Data] }
 catch { set Local.1 [gui_share_window -id ${DLPane.1} -type Local -silent] }
 catch { set Member.1 [gui_share_window -id ${DLPane.1} -type Member -silent] }
-gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 202
-gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 290
+gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 201
+gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 291
 gui_set_window_pref_key -window ${DLPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 201} {height 291} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
-set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 310]
+gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 200} {height 292} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 309]
 gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 1306
-gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 310
+gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 309
 gui_set_window_pref_key -window ${Console.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1365} {height 309} {dock_state bottom} {dock_on_new_line true}}
+gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1365} {height 308} {dock_state bottom} {dock_on_new_line true}}
 #### Start - Readjusting docked view's offset / size
 set dockAreaList { top left right bottom }
 foreach dockArea $dockAreaList {
@@ -152,6 +153,9 @@ gui_sync_global -id ${TopLevel.1} -option true
 set Source.1 [gui_create_window -type {Source}  -parent ${TopLevel.1}]
 gui_show_window -window ${Source.1} -show_state maximized
 gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+set Memory.1 [gui_create_window -type {Memory}  -parent ${TopLevel.1}]
+gui_show_window -window ${Memory.1} -show_state maximized
+gui_update_layout -id ${Memory.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
 
 # End MDI window settings
 
@@ -172,10 +176,10 @@ gui_update_statusbar_target_frame ${TopLevel.1}
 
 if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } {
 gui_set_env SIMSETUP::SIMARGS {{-ucligui }}
-gui_set_env SIMSETUP::SIMEXE {/home/user100/VM/code_files/simv}
+gui_set_env SIMSETUP::SIMEXE {/home/user100/VM/AHB3_Lite_Interface_Verification/simv}
 gui_set_env SIMSETUP::ALLOW_POLL {0}
-if { ![gui_is_db_opened -db {/home/user100/VM/code_files/simv}] } {
-gui_sim_run Ucli -exe simv -args {-ucligui } -dir /home/user100/VM/code_files -nosource
+if { ![gui_is_db_opened -db {/home/user100/VM/AHB3_Lite_Interface_Verification/simv}] } {
+gui_sim_run Ucli -exe simv -args {-ucligui } -dir /home/user100/VM/AHB3_Lite_Interface_Verification -nosource
 }
 }
 if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
@@ -258,12 +262,18 @@ gui_set_env TOGGLE::VALUEANNOTATE 0
 gui_view_scroll -id ${Source.1} -vertical -set 0
 gui_src_set_reusable -id ${Source.1}
 # Warning: Class view not found.
+
+# View 'Memory.1'
+gui_show_memory -window ${Memory.1} -memory {rl_ram_1rw.genblk1.ram_inst.mem_array[1023:0][31:0]}
+gui_set_memory_properties -window ${Memory.1} -columns 1 -address_factor 1 -address_offset 0 -start_address 0 -end_address -1 -address_radix 10
+gui_view_scroll -id ${Memory.1} -vertical -set 0
+gui_view_scroll -id ${Memory.1} -horizontal -set 0
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
 if {[gui_exist_window -window ${TopLevel.1}]} {
 	gui_set_active_window -window ${TopLevel.1}
-	gui_set_active_window -window ${Source.1}
-	gui_set_active_window -window ${Console.1}
+	gui_set_active_window -window ${Memory.1}
+	gui_set_active_window -window ${HSPane.1}
 }
 #</Session>
 

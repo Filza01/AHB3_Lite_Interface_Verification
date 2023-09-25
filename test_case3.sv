@@ -19,31 +19,31 @@ program test(ahb3lite_bus_inf intf);
       HTRANS = 2;
       HBURST = 0;
 
-      if (count == 1) begin
+      if (count == 0) begin
         HWDATA = 32'ha;
         HADDR = 4;
         HWRITE = 1;
         HREADY = 1;
       end
-      else if (count == 2) begin
+      else if (count == 1) begin
         HWDATA = 32'hb;
         HADDR = 8;
         HWRITE = 0;
         HREADY = 1;
       end
-      else if (count == 3) begin
+      else if (count == 2) begin
         HWDATA = 32'hc;
         HADDR = 12;
         HWRITE = 1;
         HREADY = 0;
       end
-      else if (count == 4) begin
+      else if (count == 3) begin
         HWDATA = 32'hc;
         HADDR = 12;
         HWRITE = 1;
         HREADY = 1;
       end
-      else if (count == 7) begin
+      else if (count == 4) begin
         HWDATA = 32'h0;
         HADDR = 12;
         HWRITE = 1;
@@ -57,31 +57,6 @@ program test(ahb3lite_bus_inf intf);
         HREADY = 1;
       end
       count++;
-
-      //print_trans();
-      //$display("pre rand done");
-
-    //   if (count % 2 == 0) begin
-    //     HADDR = count*2;
-    //     HWRITE = 1;
-    //    // HREADY = 1;
-    //   end
-    //   else begin
-    //     HWRITE = 0;
-    //    // HREADY = 0;
-    //   end
-    //   count++;
-    
-    //   if(cnt % 2 == 0) begin
-    //     //$display("make hready 0");
-    //     HREADY = 0;
-    //   end
-    //   else begin
-    //     //$display("make hready 1");
-    //     HREADY = 1;
-    //   end
-    //  cnt++;
-
     endfunction
   endclass
 

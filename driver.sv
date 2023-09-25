@@ -34,19 +34,17 @@ class driver;
     task drive;
         transaction trans;
         gen2driv.get(trans);
-        //@(posedge vif.DRIVER.HCLK);
         `DRIV_IF.HADDR <= trans.HADDR;
-        `DRIV_IF.HSEL <= trans.HSEL; // 1;
-        `DRIV_IF.HSIZE <= trans.HSIZE; // 2;
+        `DRIV_IF.HSEL <= trans.HSEL; 
+        `DRIV_IF.HSIZE <= trans.HSIZE; 
         `DRIV_IF.HPROT <= trans.HPROT;
-        `DRIV_IF.HTRANS <= trans.HTRANS; //2; 
-        `DRIV_IF.HBURST <= trans.HBURST; // 0;
-        `DRIV_IF.HWRITE <= trans.HWRITE; //1;
-        `DRIV_IF.HREADY <= trans.HREADY; //1;
+        `DRIV_IF.HTRANS <= trans.HTRANS; 
+        `DRIV_IF.HBURST <= trans.HBURST; 
+        `DRIV_IF.HWRITE <= trans.HWRITE; 
+        `DRIV_IF.HREADY <= trans.HREADY; 
         if (trans.HWRITE && trans.HREADY) begin
             @(posedge vif.DRIVER.HCLK);
             `DRIV_IF.HWDATA <= trans.HWDATA;
-            //@(posedge vif.DRIVER.HCLK);
         end
         else begin
             @(posedge vif.DRIVER.HCLK);
@@ -54,8 +52,8 @@ class driver;
         $info("[Driver]: Value recieved in driver. Transaction: %d", no_transactions);
         no_transactions++;
         //trans.print_trans();
-        #1;
         -> drv_done;
+        #1;
     endtask
 
     task main;

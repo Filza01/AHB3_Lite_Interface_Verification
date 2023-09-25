@@ -1,16 +1,17 @@
+`include "defines.sv"
 interface ahb3lite_bus_inf(
     input logic HCLK, 
     input logic HRESETn
   );    
-    logic                   HSEL;
-    logic [HADDR_SIZE -1:0] HADDR;
-    logic [HDATA_SIZE -1:0] HWDATA;
-    logic [HDATA_SIZE -1:0] HRDATA;
-    logic                   HWRITE;
-    logic [            2:0] HSIZE;
-    logic [            2:0] HBURST;
-    logic [            3:0] HPROT;
-    logic [            1:0] HTRANS;
+    logic                    HSEL;
+    logic [`HADDR_SIZE -1:0] HADDR;
+    logic [`HDATA_SIZE -1:0] HWDATA;
+    logic [`HDATA_SIZE -1:0] HRDATA;
+    logic                    HWRITE;
+    logic [ `HSIZE_SIZE-1:0] HSIZE;
+    logic [`HBURST_SIZE-1:0] HBURST;
+    logic [ `HPROT_SIZE-1:0] HPROT;
+    logic [`HTRANS_SIZE-1:0] HTRANS;
     //logic                   HMASTLOCK;
     logic                   HREADY;
     logic                   HREADYOUT;

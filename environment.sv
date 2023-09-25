@@ -61,6 +61,13 @@ class environment;
     // $display("driv.no_transactions = %d", driv.no_transactions);
     // $display("scb.no_transactions = %d", scb.no_transactions);
     wait(gen.repeat_count == scb.no_transactions);
+    $display("\nSummary: \n \t Total no. of Transactions = %0d \n \t No. of Matches    = %0d \n \t No. of MisMatches = %0d \n", gen.repeat_count, scb.no_matches, scb.no_mismatches);
+    if (scb.no_matches == gen.repeat_count) begin
+      $display("\t TEST HAS PASSED SUCCESSFULLY. \n");
+    end
+    else begin
+      $display("\t TEST HAS FAILED. \n");
+    end
   endtask  
   
   //run task

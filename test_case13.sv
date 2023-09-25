@@ -20,7 +20,7 @@ program test(ahb3lite_bus_inf intf);
 
       case (count)
         0 : begin
-                HADDR = 0;
+                HADDR = 12;
                 HWRITE = 1;
             end
         1 : begin
@@ -36,7 +36,7 @@ program test(ahb3lite_bus_inf intf);
                 HWRITE = 1;
             end
         4 : begin
-                HADDR = 0;
+                HADDR = 12;
                 HWRITE = 0;
             end
         5 : begin

@@ -1,12 +1,17 @@
 {
+    "ahb3lite_sram1rw_0000": [
+        "ahb3lite_sram1rw_0000",
+        "KGFBM",
+        "module"
+    ],
     "_vcs_unit__3820026515": [
         "_vcs_unit__3820026515",
         "a34xI",
         "module"
     ],
-    "rl_queue": [
-        "rl_queue",
-        "xPMi9",
+    "tbench_top": [
+        "tbench_top",
+        "Mk7In",
         "module"
     ],
     "std": [
@@ -14,14 +19,14 @@
         "reYIK",
         "module"
     ],
+    "test": [
+        "test",
+        "x9Hvb",
+        "module"
+    ],
     "ahb3lite_bus_inf": [
         "ahb3lite_bus_inf",
         "I4SNz",
-        "module"
-    ],
-    "ahb3lite_sram1rw_0000": [
-        "ahb3lite_sram1rw_0000",
-        "KGFBM",
         "module"
     ],
     "ahb3lite_pkg": [
@@ -29,14 +34,9 @@
         "NECV5",
         "module"
     ],
-    "test": [
-        "test",
-        "x9Hvb",
-        "module"
-    ],
-    "tbench_top": [
-        "tbench_top",
-        "Mk7In",
+    "rl_queue": [
+        "rl_queue",
+        "xPMi9",
         "module"
     ],
     "rl_ram_1rw": [
