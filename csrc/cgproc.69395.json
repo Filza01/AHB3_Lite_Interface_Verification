@@ -1,0 +1,110 @@
+{
+    "Modules": {
+        "tbench_top": {
+            "Compiled": "Yes",
+            "Compiled Times": 656
+        },
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 714
+        },
+        "_vcs_unit__3820026515": {
+            "Compiled": "Yes",
+            "Compiled Times": 651
+        },
+        "ahb3lite_bus_inf": {
+            "Compiled": "Yes",
+            "Compiled Times": 713
+        },
+        "ahb3lite_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 713
+        },
+        "test": {
+            "Compiled": "Yes",
+            "Compiled Times": 651
+        },
+        "ahb3lite_sram1rw_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 713
+        },
+        "rl_queue": {
+            "Compiled": "Yes",
+            "Compiled Times": 713
+        },
+        "rl_ram_1rw": {
+            "Compiled": "Yes",
+            "Compiled Times": 713
+        }
+    },
+    "CompUnits": {
+        "a34xI_d": {
+            "out": "a34xI_d.o",
+            "mod": "_vcs_unit__3820026515",
+            "bytes": 140574,
+            "archive": "archive.713/_69395_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "x9Hvb_d": {
+            "out": "x9Hvb_d.o",
+            "mod": "test",
+            "bytes": 19043,
+            "archive": "archive.713/_69395_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        },
+        "Mk7In_d": {
+            "out": "Mk7In_d.o",
+            "mod": "tbench_top",
+            "bytes": 11757,
+            "archive": "archive.713/_69395_archive_1.a",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {
+        "reYIK_d": {
+            "icPath": "csrc"
+        },
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "I4SNz_d": {
+            "icPath": "csrc"
+        },
+        "NECV5_d": {
+            "icPath": "csrc"
+        },
+        "KGFBM_d": {
+            "icPath": "csrc"
+        },
+        "xPMi9_d": {
+            "icPath": "csrc"
+        },
+        "LWthU_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.713/_69395_archive_1.a",
+            "objects": [
+                [
+                    "a34xI_d.o",
+                    140574
+                ],
+                [
+                    "x9Hvb_d.o",
+                    19043
+                ],
+                [
+                    "Mk7In_d.o",
+                    11757
+                ]
+            ],
+            "size": 171374
+        }
+    ]
+}

@@ -15,12 +15,10 @@ class monitor;
   
   //Samples the interface signal and send the sample packet to scoreboard
     task main;
-        // @(posedge vif.MONITOR.HCLK);
         forever begin
             transaction t;
             t = new();
             @(drv_done);
-            //@(posedge vif.MONITOR.HCLK);
             t.HSEL = `MON_IF.HSEL;
             t.HADDR = `MON_IF.HADDR;
             t.HWRITE = `MON_IF.HWRITE;
@@ -29,22 +27,18 @@ class monitor;
             t.HPROT = `MON_IF.HPROT;
             t.HTRANS = `MON_IF.HTRANS;
             t.HREADY = `MON_IF.HREADY;
-            if (`MON_IF.HWRITE && `MON_IF.HREADY) begin
+            if (`MON_IF.HWRITE) begin 
                 @(posedge vif.MONITOR.HCLK);
                 t.HWDATA = `MON_IF.HWDATA;
             end
             else begin 
-                if (`MON_IF.HREADY) begin
-                    @(posedge vif.MONITOR.HCLK);
-                    t.HRDATA = `MON_IF.HRDATA;  
-                end
+                @(posedge vif.MONITOR.HCLK);
+                t.HRDATA = `MON_IF.HRDATA;  
             end
             t.HREADYOUT = `MON_IF.HREADYOUT;
             t.HRESP = `MON_IF.HRESP;
             mon2scb.put(t);
-            $info("[Monitor] Data passed to scoreboard.");
-            //$display("reset = %d", vif.HRESETn);
-            //t.print_trans();
+            //$info("[Monitor] Data passed to scoreboard.");
         end
     endtask
   

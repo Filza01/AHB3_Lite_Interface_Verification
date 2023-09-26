@@ -1,5 +1,5 @@
 # DVE Simulation Rebuild/Restart Options
-# Saved on Mon Sep 25 19:54:15 2023
+# Saved on Tue Sep 26 20:51:40 2023
 set SIMSETUP::REBUILDOPTION 1
 set SIMSETUP::REBUILDCMD {vcs -lca -debug_access+all -sverilog testbench.sv design_files/*.sv}
 set SIMSETUP::REBUILDDIR {}

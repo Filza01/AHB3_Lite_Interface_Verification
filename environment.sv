@@ -1,6 +1,3 @@
-//-------------------------------------------------------------------------
-//						www.verificationguide.com
-//-------------------------------------------------------------------------
 `include "transaction.sv"
 `include "generator.sv"
 `include "driver.sv"
@@ -58,8 +55,6 @@ class environment;
   task post_test();
     wait(gen_ended.triggered);
     wait(gen.repeat_count == driv.no_transactions);
-    // $display("driv.no_transactions = %d", driv.no_transactions);
-    // $display("scb.no_transactions = %d", scb.no_transactions);
     wait(gen.repeat_count == scb.no_transactions);
     $display("\nSummary: \n \t Total no. of Transactions = %0d \n \t No. of Matches    = %0d \n \t No. of MisMatches = %0d \n", gen.repeat_count, scb.no_matches, scb.no_mismatches);
     if (scb.no_matches == gen.repeat_count) begin

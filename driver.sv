@@ -42,27 +42,18 @@ class driver;
         `DRIV_IF.HBURST <= trans.HBURST; 
         `DRIV_IF.HWRITE <= trans.HWRITE; 
         `DRIV_IF.HREADY <= trans.HREADY; 
-        if (trans.HWRITE && trans.HREADY) begin
-            @(posedge vif.DRIVER.HCLK);
-            `DRIV_IF.HWDATA <= trans.HWDATA;
-        end
-        else begin
-            @(posedge vif.DRIVER.HCLK);
-        end
-        $info("[Driver]: Value recieved in driver. Transaction: %d", no_transactions);
+        @(posedge vif.DRIVER.HCLK);
+        `DRIV_IF.HWDATA <= trans.HWDATA;
+        //$info("[Driver]: Value recieved in driver. Transaction: %d", no_transactions);
         no_transactions++;
-        //trans.print_trans();
         -> drv_done;
         #1;
     endtask
 
     task main;
         wait(vif.HRESETn);
-        
         forever
             drive();
-    
-
     endtask
         
 endclass

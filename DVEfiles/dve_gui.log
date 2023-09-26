@@ -1,6 +1,6 @@
 Chronologic VCS simulator copyright 1991-2016
 Contains Synopsys proprietary information.
-Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 25 19:26 2023
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 14:31 2023
 VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
 The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
 INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
@@ -17,119 +17,91 @@ Info: "generator.sv", 22: $unit: at time 5
 [Generator] Transaction generated successfully
 Info: "generator.sv", 22: $unit: at time 5
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "driver.sv", 56: $unit: at time 15
+Info: "driver.sv", 52: $unit: at time 15
 [Driver]: Value recieved in driver. Transaction:           0
-Info: "monitor.sv", 43: $unit: at time 25
+Info: "monitor.sv", 45: $unit: at time 25
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 25
+Info: "driver.sv", 52: $unit: at time 25
 [Driver]: Value recieved in driver. Transaction:           1
-Info: "scoreboard.sv", 199: $unit: at time 25
+Info: "scoreboard.sv", 120: $unit: at time 25
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
-HSEL = 1, HADDR = 4, HWDATA = 92392, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
 [Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
- 	   Data :: Expected = 92392 Actual = 92392
-Info: "scoreboard.sv", 248: $unit: at time 25
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 25
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 35
+Info: "monitor.sv", 45: $unit: at time 35
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 35
+Info: "driver.sv", 52: $unit: at time 35
 [Driver]: Value recieved in driver. Transaction:           2
-Info: "scoreboard.sv", 199: $unit: at time 35
+Info: "scoreboard.sv", 120: $unit: at time 35
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
-HSEL = 1, HADDR = 4, HWDATA = 92392, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
 [Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
- 	   Data :: Expected = 92392 Actual = 92392
-Info: "scoreboard.sv", 248: $unit: at time 35
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 35
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 35
+Info: "monitor.sv", 45: $unit: at time 36
 [Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 35
+Info: "scoreboard.sv", 120: $unit: at time 36
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
 [Scoreboard-Not-Ready] Slave is not ready yet.
-[Scoreboard-Not-Ready-Test-PASS] Addr = 8,
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
  	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
-Info: "scoreboard.sv", 248: $unit: at time 35
+Info: "scoreboard.sv", 169: $unit: at time 36
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "driver.sv", 56: $unit: at time 45
+Info: "driver.sv", 52: $unit: at time 45
 [Driver]: Value recieved in driver. Transaction:           3
-Info: "monitor.sv", 43: $unit: at time 45
+Info: "monitor.sv", 45: $unit: at time 55
 [Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 45
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-Not-Ready] Slave is not ready yet.
-[Scoreboard-Not-Ready-Test-PASS] Addr = 8,
- 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
-Info: "scoreboard.sv", 248: $unit: at time 45
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "driver.sv", 56: $unit: at time 55
+Info: "driver.sv", 52: $unit: at time 55
 [Driver]: Value recieved in driver. Transaction:           4
-Info: "monitor.sv", 43: $unit: at time 65
-[Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 65
-[Driver]: Value recieved in driver. Transaction:           5
-Info: "scoreboard.sv", 199: $unit: at time 65
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = aa4d, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 8,
- 	   Data :: Expected = aa4d Actual = aa4d
-Info: "scoreboard.sv", 248: $unit: at time 65
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 75
-[Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 75
-[Driver]: Value recieved in driver. Transaction:           6
-Info: "scoreboard.sv", 199: $unit: at time 75
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = aa4d, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 8,
- 	   Data :: Expected = aa4d Actual = aa4d
-Info: "scoreboard.sv", 248: $unit: at time 75
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 85
-[Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 85
-[Driver]: Value recieved in driver. Transaction:           7
-Info: "scoreboard.sv", 199: $unit: at time 85
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
-HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 92392, HRESP = 0
+Info: "scoreboard.sv", 120: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
 [Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
- 	   Data :: Expected = 92392 Actual = 92392
-Info: "scoreboard.sv", 248: $unit: at time 85
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 55
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 95
+Info: "monitor.sv", 45: $unit: at time 56
 [Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 95
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = aa4d, HRESP = 0
-[Scoreboard-READ-WORD-TEST-PASS] Addr = 8,
- 	   Data :: Expected = aa4d Actual = aa4d
-Info: "scoreboard.sv", 248: $unit: at time 95
+Info: "scoreboard.sv", 120: $unit: at time 56
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 56
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
 
 Summary: 
- 	 Total no. of Transactions = 8 
- 	 No. of Matches    = 8 
+ 	 Total no. of Transactions = 5 
+ 	 No. of Matches    = 5 
  	 No. of MisMatches = 0 
 
 	 TEST HAS PASSED SUCCESSFULLY. 
 
 $finish called from file "environment.sv", line 78.
-$finish at simulation time                   95
-Simulation complete, time is 95.
+$finish at simulation time                   56
+Simulation complete, time is 56.
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 95
-CPU Time:      0.230 seconds;       Data structure size:   0.1Mb
-Mon Sep 25 19:36:16 2023
+Time: 56
+CPU Time:      0.140 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 14:32:38 2023
                          Chronologic VCS (TM)
-         Version L-2016.06_Full64 -- Mon Sep 25 19:36:17 2023
+         Version L-2016.06_Full64 -- Tue Sep 26 14:32:38 2023
                Copyright (c) 1991-2016 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -150,7 +122,7 @@ Parsing included file 'interface.sv'.
 Parsing included file 'defines.sv'.
 Back to file 'interface.sv'.
 Back to file 'testbench.sv'.
-Parsing included file 'test_case17.sv'.
+Parsing included file 'test_case3.sv'.
 Parsing included file 'environment.sv'.
 Parsing included file 'transaction.sv'.
 Parsing included file 'defines.sv'.
@@ -166,7 +138,7 @@ Parsing included file 'scoreboard.sv'.
 Parsing included file 'defines.sv'.
 Back to file 'scoreboard.sv'.
 Back to file 'environment.sv'.
-Back to file 'test_case17.sv'.
+Back to file 'test_case3.sv'.
 Back to file 'testbench.sv'.
 Parsing design file 'design_files/ahb3lite_pkg.sv'
 Parsing design file 'design_files/ahb3lite_sram1rw.sv'
@@ -199,154 +171,119 @@ No TimeScale specified
 Starting vcs inline pass...
 9 unique modules to generate
 9 modules and 0 UDP read. 
-recompiling package _vcs_unit__3820026515
-recompiling package std
-recompiling module ahb3lite_bus_inf
-recompiling module test
+	However, due to incremental compilation, only 1 module needs to be compiled. 
 recompiling module tbench_top
-recompiling package ahb3lite_pkg
-recompiling module ahb3lite_sram1rw
-recompiling module rl_queue
-recompiling module rl_ram_1rw
-All of 9 modules done
+All of 1 modules done
 rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
-g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _58179_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o   _7945_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-CPU time: .390 seconds to compile + .289 seconds to elab + .283 seconds to link
+CPU time: .256 seconds to compile + .215 seconds to elab + .231 seconds to link
 Finished rebuilding the design.
 Chronologic VCS simulator copyright 1991-2016
 Contains Synopsys proprietary information.
-Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 25 19:36 2023
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 14:32 2023
 VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
 The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
 INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
 INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
 --------- [DRIVER] Reset Started ---------
 --------- [DRIVER] Reset Ended ---------
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "driver.sv", 56: $unit: at time 15
+Info: "driver.sv", 52: $unit: at time 15
 [Driver]: Value recieved in driver. Transaction:           0
-Info: "monitor.sv", 43: $unit: at time 25
+Info: "monitor.sv", 45: $unit: at time 16
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 25
-[Driver]: Value recieved in driver. Transaction:           1
-Info: "scoreboard.sv", 199: $unit: at time 25
+Info: "scoreboard.sv", 120: $unit: at time 16
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
-HSEL = 1, HADDR = 4, HWDATA = 92392, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
- 	   Data :: Expected = 92392 Actual = 92392
-Info: "scoreboard.sv", 248: $unit: at time 25
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 16
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 35
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "monitor.sv", 45: $unit: at time 35
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 35
+Info: "driver.sv", 52: $unit: at time 35
 [Driver]: Value recieved in driver. Transaction:           2
-Info: "scoreboard.sv", 199: $unit: at time 35
+Info: "scoreboard.sv", 120: $unit: at time 35
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
-HSEL = 1, HADDR = 4, HWDATA = 23f4d, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
 [Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
- 	   Data :: Expected = 23f4d Actual = 23f4d
-Info: "scoreboard.sv", 248: $unit: at time 35
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 35
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 35
+Info: "monitor.sv", 45: $unit: at time 36
 [Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 35
+Info: "scoreboard.sv", 120: $unit: at time 36
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
 [Scoreboard-Not-Ready] Slave is not ready yet.
-[Scoreboard-Not-Ready-Test-PASS] Addr = 8,
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
  	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
-Info: "scoreboard.sv", 248: $unit: at time 35
+Info: "scoreboard.sv", 169: $unit: at time 36
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "driver.sv", 56: $unit: at time 45
+Info: "driver.sv", 52: $unit: at time 45
 [Driver]: Value recieved in driver. Transaction:           3
-Info: "monitor.sv", 43: $unit: at time 45
+Info: "monitor.sv", 45: $unit: at time 55
 [Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 45
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-Not-Ready] Slave is not ready yet.
-[Scoreboard-Not-Ready-Test-PASS] Addr = 8,
- 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
-Info: "scoreboard.sv", 248: $unit: at time 45
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "driver.sv", 56: $unit: at time 55
+Info: "driver.sv", 52: $unit: at time 55
 [Driver]: Value recieved in driver. Transaction:           4
-Info: "monitor.sv", 43: $unit: at time 65
-[Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 65
-[Driver]: Value recieved in driver. Transaction:           5
-Info: "scoreboard.sv", 199: $unit: at time 65
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = aa4d, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 8,
- 	   Data :: Expected = aa4d Actual = aa4d
-Info: "scoreboard.sv", 248: $unit: at time 65
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 75
-[Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 75
-[Driver]: Value recieved in driver. Transaction:           6
-Info: "scoreboard.sv", 199: $unit: at time 75
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = 223239d, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 8,
- 	   Data :: Expected = 223239d Actual = 223239d
-Info: "scoreboard.sv", 248: $unit: at time 75
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 85
-[Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 85
-[Driver]: Value recieved in driver. Transaction:           7
-Info: "scoreboard.sv", 199: $unit: at time 85
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
-HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 23f4d, HRESP = 0
+Info: "scoreboard.sv", 120: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
 [Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
- 	   Data :: Expected = 23f4d Actual = 23f4d
-Info: "scoreboard.sv", 248: $unit: at time 85
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 55
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 95
+Info: "monitor.sv", 45: $unit: at time 56
 [Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 95
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
-HSEL = 1, HADDR = 8, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 223239d, HRESP = 0
-[Scoreboard-READ-WORD-TEST-PASS] Addr = 8,
- 	   Data :: Expected = 223239d Actual = 223239d
-Info: "scoreboard.sv", 248: $unit: at time 95
+Info: "scoreboard.sv", 120: $unit: at time 56
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 56
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
 
 Summary: 
- 	 Total no. of Transactions = 8 
- 	 No. of Matches    = 8 
+ 	 Total no. of Transactions = 5 
+ 	 No. of Matches    = 5 
  	 No. of MisMatches = 0 
 
 	 TEST HAS PASSED SUCCESSFULLY. 
 
 $finish called from file "environment.sv", line 78.
-$finish at simulation time                   95
-Simulation complete, time is 95.
+$finish at simulation time                   56
+Simulation complete, time is 56.
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 95
+Time: 56
 CPU Time:      0.110 seconds;       Data structure size:   0.1Mb
-Mon Sep 25 19:54:15 2023
+Tue Sep 26 14:35:19 2023
                          Chronologic VCS (TM)
-         Version L-2016.06_Full64 -- Mon Sep 25 19:54:16 2023
+         Version L-2016.06_Full64 -- Tue Sep 26 14:35:19 2023
                Copyright (c) 1991-2016 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -367,7 +304,7 @@ Parsing included file 'interface.sv'.
 Parsing included file 'defines.sv'.
 Back to file 'interface.sv'.
 Back to file 'testbench.sv'.
-Parsing included file 'test_case8.sv'.
+Parsing included file 'test_case3.sv'.
 Parsing included file 'environment.sv'.
 Parsing included file 'transaction.sv'.
 Parsing included file 'defines.sv'.
@@ -383,7 +320,7 @@ Parsing included file 'scoreboard.sv'.
 Parsing included file 'defines.sv'.
 Back to file 'scoreboard.sv'.
 Back to file 'environment.sv'.
-Back to file 'test_case8.sv'.
+Back to file 'test_case3.sv'.
 Back to file 'testbench.sv'.
 Parsing design file 'design_files/ahb3lite_pkg.sv'
 Parsing design file 'design_files/ahb3lite_sram1rw.sv'
@@ -428,186 +365,2810 @@ recompiling module rl_ram_1rw
 All of 9 modules done
 rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 if [ -x ../simv ]; then chmod -x ../simv; fi
-g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _64863_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _9260_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-CPU time: .402 seconds to compile + .300 seconds to elab + .352 seconds to link
+CPU time: .305 seconds to compile + .217 seconds to elab + .223 seconds to link
 Finished rebuilding the design.
 Chronologic VCS simulator copyright 1991-2016
 Contains Synopsys proprietary information.
-Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 25 19:54 2023
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 14:35 2023
 VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
 The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
 INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
 INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
 --------- [DRIVER] Reset Started ---------
 --------- [DRIVER] Reset Ended ---------
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
+Info: "generator.sv", 22: $unit: at time 10
 [Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "generator.sv", 22: $unit: at time 5
-[Generator] Transaction generated successfully
-Info: "driver.sv", 56: $unit: at time 15
+Info: "driver.sv", 52: $unit: at time 15
 [Driver]: Value recieved in driver. Transaction:           0
-Info: "monitor.sv", 43: $unit: at time 25
+Info: "monitor.sv", 45: $unit: at time 16
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 25
-[Driver]: Value recieved in driver. Transaction:           1
-Info: "scoreboard.sv", 199: $unit: at time 25
+Info: "scoreboard.sv", 120: $unit: at time 16
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
-HSEL = 1, HADDR = 58, HWDATA = 66696de7, HWRITE = 1, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-FAIL] Addr = 58,
- 	   Data :: Expected = xxxxxxxx Actual = 66696de7
-Info: "scoreboard.sv", 248: $unit: at time 25
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 35
-[Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 35
-[Driver]: Value recieved in driver. Transaction:           2
-Info: "scoreboard.sv", 199: $unit: at time 35
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
-HSEL = 1, HADDR = 58, HWDATA = 873ca504, HWRITE = 1, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-FAIL] Addr = 58,
- 	   Data :: Expected = xxxxxxxx Actual = 873ca504
-Info: "scoreboard.sv", 248: $unit: at time 35
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 35
-[Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 35
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
-HSEL = 1, HADDR = 5c, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 3, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-Not-Ready] Slave is not ready yet.
-[Scoreboard-Not-Ready-Test-PASS] Addr = 5c,
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
  	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
-Info: "scoreboard.sv", 248: $unit: at time 35
+Info: "scoreboard.sv", 169: $unit: at time 16
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "driver.sv", 56: $unit: at time 45
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "monitor.sv", 45: $unit: at time 35
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "scoreboard.sv", 120: $unit: at time 35
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = b, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = b Actual = b
+Info: "scoreboard.sv", 169: $unit: at time 35
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 36
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 45
+[Driver]: Value recieved in driver. Transaction:           3
+Info: "monitor.sv", 45: $unit: at time 55
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 55
+[Driver]: Value recieved in driver. Transaction:           4
+Info: "scoreboard.sv", 120: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = b, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = b Actual = b
+Info: "scoreboard.sv", 169: $unit: at time 55
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 56
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 56
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 56
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 5 
+ 	 No. of Matches    = 5 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 78.
+$finish at simulation time                   56
+Simulation complete, time is 56.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 56
+CPU Time:      0.100 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 14:40:13 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 14:40:14 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case3.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case3.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _11105_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .321 seconds to compile + .225 seconds to elab + .236 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 14:40 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "driver.sv", 52: $unit: at time 15
+[Driver]: Value recieved in driver. Transaction:           0
+Info: "monitor.sv", 45: $unit: at time 16
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 16
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 16
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "monitor.sv", 45: $unit: at time 35
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "scoreboard.sv", 120: $unit: at time 35
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = b, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = b Actual = b
+Info: "scoreboard.sv", 169: $unit: at time 35
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 36
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 45
+[Driver]: Value recieved in driver. Transaction:           3
+Info: "monitor.sv", 45: $unit: at time 55
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 55
+[Driver]: Value recieved in driver. Transaction:           4
+Info: "scoreboard.sv", 120: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = b, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = b Actual = b
+Info: "scoreboard.sv", 169: $unit: at time 55
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 56
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 56
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 56
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 5 
+ 	 No. of Matches    = 5 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 78.
+$finish at simulation time                   56
+Simulation complete, time is 56.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 56
+CPU Time:      0.100 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 14:50:16 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 14:50:16 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case3.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case3.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _12956_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .309 seconds to compile + .234 seconds to elab + .222 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 14:50 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "driver.sv", 52: $unit: at time 15
+[Driver]: Value recieved in driver. Transaction:           0
+Info: "monitor.sv", 45: $unit: at time 16
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 16
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 16
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "monitor.sv", 45: $unit: at time 35
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "scoreboard.sv", 120: $unit: at time 35
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 35
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 36
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 45
+[Driver]: Value recieved in driver. Transaction:           3
+Info: "monitor.sv", 45: $unit: at time 55
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 55
+[Driver]: Value recieved in driver. Transaction:           4
+Info: "scoreboard.sv", 120: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 55
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 56
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 56
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 56
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 65
+[Driver]: Value recieved in driver. Transaction:           5
+Info: "monitor.sv", 45: $unit: at time 75
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 75
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 75
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 6 
+ 	 No. of Matches    = 6 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 78.
+$finish at simulation time                   75
+Simulation complete, time is 75.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 75
+CPU Time:      0.100 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 14:55:18 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 14:55:19 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case3.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case3.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _14264_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .309 seconds to compile + .252 seconds to elab + .240 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 14:55 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "driver.sv", 52: $unit: at time 15
+[Driver]: Value recieved in driver. Transaction:           0
+Info: "monitor.sv", 45: $unit: at time 16
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 16
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 16
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "monitor.sv", 45: $unit: at time 35
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "scoreboard.sv", 120: $unit: at time 35
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 35
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 36
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 45
+[Driver]: Value recieved in driver. Transaction:           3
+Info: "monitor.sv", 45: $unit: at time 46
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 46
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 46
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 55
+[Driver]: Value recieved in driver. Transaction:           4
+Info: "monitor.sv", 45: $unit: at time 65
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 65
+[Driver]: Value recieved in driver. Transaction:           5
+Info: "scoreboard.sv", 120: $unit: at time 65
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = d, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 65
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 75
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 75
+[Driver]: Value recieved in driver. Transaction:           6
+Info: "scoreboard.sv", 120: $unit: at time 75
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = d, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 75
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 76
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 76
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 76
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 85
+[Driver]: Value recieved in driver. Transaction:           7
+Info: "monitor.sv", 45: $unit: at time 86
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 86
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 86
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 95
+[Driver]: Value recieved in driver. Transaction:           8
+Info: "monitor.sv", 45: $unit: at time 105
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 105
+[Driver]: Value recieved in driver. Transaction:           9
+Info: "scoreboard.sv", 120: $unit: at time 105
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 8-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = d, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 105
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 115
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 115
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 9-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = d, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 115
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 10 
+ 	 No. of Matches    = 10 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 78.
+$finish at simulation time                  115
+Simulation complete, time is 115.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 115
+CPU Time:      0.090 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 14:59:58 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 14:59:58 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case3.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case3.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _15572_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .310 seconds to compile + .233 seconds to elab + .229 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 15:00 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "driver.sv", 52: $unit: at time 15
+[Driver]: Value recieved in driver. Transaction:           0
+Info: "monitor.sv", 45: $unit: at time 16
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 16
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 16
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "monitor.sv", 45: $unit: at time 35
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "scoreboard.sv", 120: $unit: at time 35
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 35
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 36
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 45
+[Driver]: Value recieved in driver. Transaction:           3
+Info: "monitor.sv", 45: $unit: at time 46
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 46
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 46
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 55
+[Driver]: Value recieved in driver. Transaction:           4
+Info: "monitor.sv", 45: $unit: at time 65
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 65
+[Driver]: Value recieved in driver. Transaction:           5
+Info: "scoreboard.sv", 120: $unit: at time 65
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 65
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 66
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 66
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 66
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 75
+[Driver]: Value recieved in driver. Transaction:           6
+Info: "monitor.sv", 45: $unit: at time 76
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 76
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 76
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 85
+[Driver]: Value recieved in driver. Transaction:           7
+Info: "monitor.sv", 45: $unit: at time 95
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 95
+[Driver]: Value recieved in driver. Transaction:           8
+Info: "scoreboard.sv", 120: $unit: at time 95
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 95
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 105
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 105
+[Driver]: Value recieved in driver. Transaction:           9
+Info: "scoreboard.sv", 120: $unit: at time 105
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 8-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 105
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 115
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 115
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 9-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 115
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 10 
+ 	 No. of Matches    = 10 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 78.
+$finish at simulation time                  115
+Simulation complete, time is 115.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 115
+CPU Time:      0.090 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 15:17:58 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 15:17:59 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case3.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case3.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _21014_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .312 seconds to compile + .216 seconds to elab + .225 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 15:18 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "driver.sv", 52: $unit: at time 15
+[Driver]: Value recieved in driver. Transaction:           0
+Info: "monitor.sv", 50: $unit: at time 25
+[Monitor] Data passed to scoreboard. Transaction           0
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "scoreboard.sv", 120: $unit: at time 25
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 25
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "driver.sv", 52: $unit: at time 45
+[Driver]: Value recieved in driver. Transaction:           3
+Info: "driver.sv", 52: $unit: at time 55
+[Driver]: Value recieved in driver. Transaction:           4
+Info: "monitor.sv", 50: $unit: at time 55
+[Monitor] Data passed to scoreboard. Transaction           1
+Info: "scoreboard.sv", 120: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 55
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 65
+[Driver]: Value recieved in driver. Transaction:           5
+Info: "driver.sv", 52: $unit: at time 75
+[Driver]: Value recieved in driver. Transaction:           6
+Info: "driver.sv", 52: $unit: at time 85
+[Driver]: Value recieved in driver. Transaction:           7
+Info: "monitor.sv", 50: $unit: at time 85
+[Monitor] Data passed to scoreboard. Transaction           2
+Info: "scoreboard.sv", 120: $unit: at time 85
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 85
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 50: $unit: at time 95
+[Monitor] Data passed to scoreboard. Transaction           3
+Info: "driver.sv", 52: $unit: at time 95
+[Driver]: Value recieved in driver. Transaction:           8
+Info: "scoreboard.sv", 120: $unit: at time 95
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 95
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 50: $unit: at time 105
+[Monitor] Data passed to scoreboard. Transaction           4
+Info: "driver.sv", 52: $unit: at time 105
+[Driver]: Value recieved in driver. Transaction:           9
+Info: "scoreboard.sv", 120: $unit: at time 105
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 105
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 No. of Matches    = 10 
+ 	 No. of MisMatches = 5 
+          0
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 79.
+$finish at simulation time                  105
+Simulation complete, time is 105.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 105
+CPU Time:      0.080 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 15:20:10 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 15:20:10 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 15:20 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "driver.sv", 52: $unit: at time 15
+[Driver]: Value recieved in driver. Transaction:           0
+Info: "monitor.sv", 50: $unit: at time 25
+[Monitor] Data passed to scoreboard. Transaction           0
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "scoreboard.sv", 120: $unit: at time 25
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 25
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "driver.sv", 52: $unit: at time 45
+[Driver]: Value recieved in driver. Transaction:           3
+Info: "driver.sv", 52: $unit: at time 55
+[Driver]: Value recieved in driver. Transaction:           4
+Info: "monitor.sv", 50: $unit: at time 55
+[Monitor] Data passed to scoreboard. Transaction           1
+Info: "scoreboard.sv", 120: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 55
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 65
+[Driver]: Value recieved in driver. Transaction:           5
+Info: "driver.sv", 52: $unit: at time 75
+[Driver]: Value recieved in driver. Transaction:           6
+Info: "driver.sv", 52: $unit: at time 85
+[Driver]: Value recieved in driver. Transaction:           7
+Info: "monitor.sv", 50: $unit: at time 85
+[Monitor] Data passed to scoreboard. Transaction           2
+Info: "scoreboard.sv", 120: $unit: at time 85
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 85
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 50: $unit: at time 95
+[Monitor] Data passed to scoreboard. Transaction           3
+Info: "driver.sv", 52: $unit: at time 95
+[Driver]: Value recieved in driver. Transaction:           8
+Info: "scoreboard.sv", 120: $unit: at time 95
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 95
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 50: $unit: at time 105
+[Monitor] Data passed to scoreboard. Transaction           4
+Info: "driver.sv", 52: $unit: at time 105
+[Driver]: Value recieved in driver. Transaction:           9
+Info: "scoreboard.sv", 120: $unit: at time 105
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 105
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 No. of Matches    = 10 
+ 	 No. of MisMatches = 5 
+          0
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 79.
+$finish at simulation time                  105
+Simulation complete, time is 105.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 105
+CPU Time:      0.090 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 15:40:22 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 15:40:23 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case3.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case3.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _23882_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .394 seconds to compile + .287 seconds to elab + .306 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 15:40 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "driver.sv", 52: $unit: at time 15
+[Driver]: Value recieved in driver. Transaction:           0
+Info: "monitor.sv", 45: $unit: at time 16
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 16
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 16
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "monitor.sv", 45: $unit: at time 35
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "scoreboard.sv", 120: $unit: at time 35
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = a, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 35
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 36
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 45
+[Driver]: Value recieved in driver. Transaction:           3
+Info: "monitor.sv", 45: $unit: at time 46
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 46
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 46
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 55
+[Driver]: Value recieved in driver. Transaction:           4
+Info: "monitor.sv", 45: $unit: at time 65
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 65
+[Driver]: Value recieved in driver. Transaction:           5
+Info: "scoreboard.sv", 120: $unit: at time 65
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 65
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 66
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 66
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 66
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 75
+[Driver]: Value recieved in driver. Transaction:           6
+Info: "monitor.sv", 45: $unit: at time 76
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 76
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 76
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 85
+[Driver]: Value recieved in driver. Transaction:           7
+Info: "monitor.sv", 45: $unit: at time 95
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 95
+[Driver]: Value recieved in driver. Transaction:           8
+Info: "scoreboard.sv", 120: $unit: at time 95
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 95
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 105
+[Monitor] Data passed to scoreboard.
+Info: "driver.sv", 52: $unit: at time 105
+[Driver]: Value recieved in driver. Transaction:           9
+Info: "scoreboard.sv", 120: $unit: at time 105
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 8-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 105
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "monitor.sv", 45: $unit: at time 115
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 115
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 9-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = a, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = a Actual = a
+Info: "scoreboard.sv", 169: $unit: at time 115
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 10 
+ 	 No. of Matches    = 10 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 78.
+$finish at simulation time                  115
+Simulation complete, time is 115.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 115
+CPU Time:      0.120 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 15:48:14 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 15:48:15 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case3.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case3.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _25732_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .371 seconds to compile + .257 seconds to elab + .271 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 15:48 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "generator.sv", 22: $unit: at time 10
+[Generator] Transaction generated successfully
+Info: "driver.sv", 52: $unit: at time 15
+[Driver]: Value recieved in driver. Transaction:           0
+Info: "monitor.sv", 43: $unit: at time 16
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 16
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 16
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 25
+[Driver]: Value recieved in driver. Transaction:           1
+Info: "monitor.sv", 43: $unit: at time 26
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 26
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 26
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 35
+[Driver]: Value recieved in driver. Transaction:           2
+Info: "monitor.sv", 43: $unit: at time 36
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 45
 [Driver]: Value recieved in driver. Transaction:           3
 Info: "monitor.sv", 43: $unit: at time 55
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 55
+Info: "driver.sv", 52: $unit: at time 55
 [Driver]: Value recieved in driver. Transaction:           4
-Info: "scoreboard.sv", 199: $unit: at time 55
+Info: "scoreboard.sv", 120: $unit: at time 55
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
-HSEL = 1, HADDR = 5c, HWDATA = 5e4eb1bf, HWRITE = 1, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 3, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-FAIL] Addr = 5c,
- 	   Data :: Expected = xxxxxxxx Actual = 5e4eb1bf
-Info: "scoreboard.sv", 248: $unit: at time 55
+HSEL = 1, HADDR = 4, HWDATA = d, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 55
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
 Info: "monitor.sv", 43: $unit: at time 65
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 65
+Info: "driver.sv", 52: $unit: at time 65
 [Driver]: Value recieved in driver. Transaction:           5
-Info: "scoreboard.sv", 199: $unit: at time 65
+Info: "scoreboard.sv", 120: $unit: at time 65
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
-HSEL = 1, HADDR = 50, HWDATA = 56b899cc, HWRITE = 1, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 3, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-FAIL] Addr = 50,
- 	   Data :: Expected = xxxxxxxx Actual = 56b899cc
-Info: "scoreboard.sv", 248: $unit: at time 65
+HSEL = 1, HADDR = 4, HWDATA = d, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 65
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 75
+Info: "monitor.sv", 43: $unit: at time 66
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 75
-[Driver]: Value recieved in driver. Transaction:           6
-Info: "scoreboard.sv", 199: $unit: at time 75
+Info: "scoreboard.sv", 120: $unit: at time 66
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
-HSEL = 1, HADDR = 54, HWDATA = 6da5ccdf, HWRITE = 1, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 3, HREADY = 1, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-WRITE-WORD-TEST-FAIL] Addr = 54,
- 	   Data :: Expected = xxxxxxxx Actual = 6da5ccdf
-Info: "scoreboard.sv", 248: $unit: at time 75
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 75
-[Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 75
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
-HSEL = 1, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
 [Scoreboard-Not-Ready] Slave is not ready yet.
-[Scoreboard-Not-Ready-Test-PASS] Addr = 0,
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
  	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
-Info: "scoreboard.sv", 248: $unit: at time 75
+Info: "scoreboard.sv", 169: $unit: at time 66
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "driver.sv", 56: $unit: at time 85
+Info: "driver.sv", 52: $unit: at time 75
+[Driver]: Value recieved in driver. Transaction:           6
+Info: "monitor.sv", 43: $unit: at time 76
+[Monitor] Data passed to scoreboard.
+Info: "scoreboard.sv", 120: $unit: at time 76
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 76
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "driver.sv", 52: $unit: at time 85
 [Driver]: Value recieved in driver. Transaction:           7
 Info: "monitor.sv", 43: $unit: at time 95
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 95
+Info: "driver.sv", 52: $unit: at time 95
 [Driver]: Value recieved in driver. Transaction:           8
-Info: "scoreboard.sv", 199: $unit: at time 95
+Info: "scoreboard.sv", 120: $unit: at time 95
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
-HSEL = 1, HADDR = 58, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = 873ca504, HRESP = 0
-[Scoreboard-READ-WORD-TEST-FAIL] Addr = 58,
- 	   Data :: Expected = xxxxxxxx Actual = 873ca504
-Info: "scoreboard.sv", 248: $unit: at time 95
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = d, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 95
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 95
+Info: "monitor.sv", 43: $unit: at time 105
 [Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 95
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 8-----------------------------
-HSEL = 1, HADDR = 5c, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 3, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
-[Scoreboard-Not-Ready] Slave is not ready yet.
-[Scoreboard-Not-Ready-Test-PASS] Addr = 5c,
- 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
-Info: "scoreboard.sv", 248: $unit: at time 95
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "driver.sv", 56: $unit: at time 105
+Info: "driver.sv", 52: $unit: at time 105
 [Driver]: Value recieved in driver. Transaction:           9
+Info: "scoreboard.sv", 120: $unit: at time 105
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 8-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = d, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 105
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
 Info: "monitor.sv", 43: $unit: at time 115
 [Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 115
-[Driver]: Value recieved in driver. Transaction:          10
-Info: "scoreboard.sv", 199: $unit: at time 115
+Info: "scoreboard.sv", 120: $unit: at time 115
 [SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 9-----------------------------
-HSEL = 1, HADDR = 5c, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 3, HREADY = 1, HREADYOUT = 1, HRDATA = 5e4eb1bf, HRESP = 0
-[Scoreboard-READ-WORD-TEST-FAIL] Addr = 5c,
- 	   Data :: Expected = xxxxxxxx Actual = 5e4eb1bf
-Info: "scoreboard.sv", 248: $unit: at time 115
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 125
-[Monitor] Data passed to scoreboard.
-Info: "driver.sv", 56: $unit: at time 125
-[Driver]: Value recieved in driver. Transaction:          11
-Info: "scoreboard.sv", 199: $unit: at time 125
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 10-----------------------------
-HSEL = 1, HADDR = 50, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 3, HREADY = 1, HREADYOUT = 1, HRDATA = 56b899cc, HRESP = 0
-[Scoreboard-READ-WORD-TEST-FAIL] Addr = 50,
- 	   Data :: Expected = xxxxxxxx Actual = 56b899cc
-Info: "scoreboard.sv", 248: $unit: at time 125
-[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
-Info: "monitor.sv", 43: $unit: at time 135
-[Monitor] Data passed to scoreboard.
-Info: "scoreboard.sv", 199: $unit: at time 135
-[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 11-----------------------------
-HSEL = 1, HADDR = 54, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 2, HPROT = 1, HTRANS = 3, HREADY = 1, HREADYOUT = 1, HRDATA = 6da5ccdf, HRESP = 0
-[Scoreboard-READ-WORD-TEST-FAIL] Addr = 54,
- 	   Data :: Expected = xxxxxxxx Actual = 6da5ccdf
-Info: "scoreboard.sv", 248: $unit: at time 135
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 1, HREADYOUT = 1, HRDATA = d, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = d Actual = d
+Info: "scoreboard.sv", 169: $unit: at time 115
 [SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
 
 Summary: 
- 	 Total no. of Transactions = 12 
- 	 No. of Matches    = 3 
- 	 No. of MisMatches = 9 
+ 	 Total no. of Transactions = 10 
+ 	 No. of Matches    = 10 
+ 	 No. of MisMatches = 0 
 
-	 TEST HAS FAILED. 
+	 TEST HAS PASSED SUCCESSFULLY. 
 
 $finish called from file "environment.sv", line 78.
-$finish at simulation time                  135
-Simulation complete, time is 135.
+$finish at simulation time                  115
+Simulation complete, time is 115.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 115
+CPU Time:      0.120 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 16:18:27 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 16:18:28 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case6.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case6.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _30599_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .358 seconds to compile + .264 seconds to elab + .270 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 16:18 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "scoreboard.sv", 120: $unit: at time 16
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+HSEL = 0, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 0, HBURST = 0, HPROT = 0, HTRANS = 0, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 16
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 26
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+HSEL = 1, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 26
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+HSEL = 1, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 46
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 46
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 56
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 56
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 66
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
+HSEL = 1, HADDR = 8, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 8,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 66
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 76
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
+HSEL = 1, HADDR = 8, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 8,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 76
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 86
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
+HSEL = 1, HADDR = c, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = c,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 86
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 96
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 8-----------------------------
+HSEL = 1, HADDR = c, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = c,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 96
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 106
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 9-----------------------------
+HSEL = 1, HADDR = 10, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 10,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 106
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 116
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 10-----------------------------
+HSEL = 1, HADDR = 10, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 10,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 116
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 126
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 11-----------------------------
+HSEL = 1, HADDR = 14, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 14,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 126
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 136
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 12-----------------------------
+HSEL = 1, HADDR = 14, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 14,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 136
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 146
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 13-----------------------------
+HSEL = 1, HADDR = 18, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 18,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 146
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 156
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 14-----------------------------
+HSEL = 1, HADDR = 18, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 18,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 156
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 166
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 15-----------------------------
+HSEL = 1, HADDR = 1c, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 1c,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 166
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 176
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 16-----------------------------
+HSEL = 1, HADDR = 1c, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 1c,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 176
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 186
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 17-----------------------------
+HSEL = 1, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 186
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 196
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 18-----------------------------
+HSEL = 1, HADDR = 0, HWDATA = xxxxxxxx, HWRITE = 0, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 196
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 120: $unit: at time 206
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 19-----------------------------
+HSEL = 1, HADDR = 4, HWDATA = xxxxxxxx, HWRITE = 1, HSIZE = 2, HBURST = 0, HPROT = 1, HTRANS = 2, HREADY = 0, HREADYOUT = 1, HRDATA = xxxxxxxx, HRESP = 0
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 169: $unit: at time 206
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 20 
+ 	 No. of Matches    = 20 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 76.
+$finish at simulation time                  206
+Simulation complete, time is 206.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 206
+CPU Time:      0.120 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 18:21:32 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 18:21:33 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case4.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case4.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _37134_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .411 seconds to compile + .262 seconds to elab + .244 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 18:21 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "scoreboard.sv", 159: $unit: at time 16
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 16
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 26
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Idle] Slave is idle.
+[Scoreboard-Idle-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 26
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 36
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Idle] Slave is idle.
+[Scoreboard-Idle-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 36
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 6d9de1ab Actual = 6d9de1ab
+Info: "scoreboard.sv", 199: $unit: at time 55
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 56
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Idle] Slave is idle.
+[Scoreboard-Idle-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 56
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 66
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Idle] Slave is idle.
+[Scoreboard-Idle-Test-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 66
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 85
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 6d9de1ab Actual = 6d9de1ab
+Info: "scoreboard.sv", 199: $unit: at time 85
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 95
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 6d9de1ab Actual = 6d9de1ab
+Info: "scoreboard.sv", 199: $unit: at time 95
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 8 
+ 	 No. of Matches    = 8 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 76.
+$finish at simulation time                   95
+Simulation complete, time is 95.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 95
+CPU Time:      0.120 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 20:13:35 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 20:13:35 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_rand_wr_rd_fixed_addr.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_rand_wr_rd_fixed_addr.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _59410_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .310 seconds to compile + .225 seconds to elab + .233 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 20:13 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "scoreboard.sv", 159: $unit: at time 25
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 25
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 35
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 35
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 45
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 56b899cc Actual = 56b899cc
+Info: "scoreboard.sv", 199: $unit: at time 45
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e1a4ccc3 Actual = e1a4ccc3
+Info: "scoreboard.sv", 199: $unit: at time 55
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 65
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e1a4ccc3 Actual = e1a4ccc3
+Info: "scoreboard.sv", 199: $unit: at time 65
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 75
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 5-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e1a4ccc3 Actual = e1a4ccc3
+Info: "scoreboard.sv", 199: $unit: at time 75
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 85
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 6-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e1a4ccc3 Actual = e1a4ccc3
+Info: "scoreboard.sv", 199: $unit: at time 85
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 95
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 7-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e1a4ccc3 Actual = e1a4ccc3
+Info: "scoreboard.sv", 199: $unit: at time 95
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 105
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 8-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e5ef8c27 Actual = e5ef8c27
+Info: "scoreboard.sv", 199: $unit: at time 105
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 115
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 9-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e5ef8c27 Actual = e5ef8c27
+Info: "scoreboard.sv", 199: $unit: at time 115
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 125
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 10-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e5ef8c27 Actual = e5ef8c27
+Info: "scoreboard.sv", 199: $unit: at time 125
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 135
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 11-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 38d2c080 Actual = 38d2c080
+Info: "scoreboard.sv", 199: $unit: at time 135
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 145
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 12-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 87c4370d Actual = 87c4370d
+Info: "scoreboard.sv", 199: $unit: at time 145
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 155
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 13-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 87c4370d Actual = 87c4370d
+Info: "scoreboard.sv", 199: $unit: at time 155
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 165
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 14-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 87c4370d Actual = 87c4370d
+Info: "scoreboard.sv", 199: $unit: at time 165
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 175
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 15-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e8f5a7bb Actual = e8f5a7bb
+Info: "scoreboard.sv", 199: $unit: at time 175
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 185
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 16-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e8f5a7bb Actual = e8f5a7bb
+Info: "scoreboard.sv", 199: $unit: at time 185
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 195
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 17-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-READ-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = e8f5a7bb Actual = e8f5a7bb
+Info: "scoreboard.sv", 199: $unit: at time 195
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 205
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 18-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 41d28bd5 Actual = 41d28bd5
+Info: "scoreboard.sv", 199: $unit: at time 205
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 215
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 19-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = fe81a861 Actual = fe81a861
+Info: "scoreboard.sv", 199: $unit: at time 215
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 20 
+ 	 No. of Matches    = 20 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 76.
+$finish at simulation time                  215
+Simulation complete, time is 215.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 215
+CPU Time:      0.100 seconds;       Data structure size:   0.1Mb
+Tue Sep 26 20:51:40 2023
+                         Chronologic VCS (TM)
+         Version L-2016.06_Full64 -- Tue Sep 26 20:51:40 2023
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file 'testbench.sv'
+Parsing included file 'defines.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'interface.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'interface.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'test_case16.sv'.
+Parsing included file 'environment.sv'.
+Parsing included file 'transaction.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'transaction.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'monitor.sv'.
+Back to file 'environment.sv'.
+Parsing included file 'scoreboard.sv'.
+Parsing included file 'defines.sv'.
+Back to file 'scoreboard.sv'.
+Back to file 'environment.sv'.
+Back to file 'test_case16.sv'.
+Back to file 'testbench.sv'.
+Parsing design file 'design_files/ahb3lite_pkg.sv'
+Parsing design file 'design_files/ahb3lite_sram1rw.sv'
+Parsing design file 'design_files/rl_queue.sv'
+Parsing design file 'design_files/rl_ram_1r1w.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1r1w_easic_n3xs.sv'
+Parsing design file 'design_files/rl_ram_1r1w_generic.sv'
+Parsing design file 'design_files/rl_ram_1r1w_lattice.sv'
+Parsing design file 'design_files/rl_ram_1rw.sv'
+Parsing design file 'design_files/rl_ram_1rw_easic_n3x.sv'
+Parsing design file 'design_files/rl_ram_1rw_generic.sv'
+Top Level Modules:
+       tbench_top
+       rl_queue
+       rl_ram_1rw
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 99
+  Interface 'ahb3lite_bus' defined in logic library 'work' is never 
+  instantiated in design. It will be ignored.
+
+
+Warning-[UII-L] Interface not instantiated
+design_files/ahb3lite_pkg.sv, 205
+  Interface 'apb_bus' defined in logic library 'work' is never instantiated in
+  design. It will be ignored.
+
+No TimeScale specified
+Starting vcs inline pass...
+9 unique modules to generate
+9 modules and 0 UDP read. 
+recompiling package _vcs_unit__3820026515
+recompiling package std
+recompiling module ahb3lite_bus_inf
+recompiling module test
+recompiling module tbench_top
+recompiling package ahb3lite_pkg
+recompiling module ahb3lite_sram1rw
+recompiling module rl_queue
+recompiling module rl_ram_1rw
+All of 9 modules done
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic   amcQwB.o objs/amcQw_d.o   _68137_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /usr/synopsys/vcs-L-2016.06/linux64/lib/libzerosoft_rt_stubs.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libvirsim.so /usr/synopsys/vcs-L-2016.06/linux64/lib/liberrorinf.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsnpsmalloc.so    /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsnew.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libsimprofile.so /usr/synopsys/vcs-L-2016.06/linux64/lib/libuclinative.so   -Wl,-whole-archive /usr/synopsys/vcs-L-2016.06/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/synopsys/vcs-L-2016.06/linux64/lib/vcs_save_restore_new.o /usr/synopsys/verdi-L-2016.06-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .305 seconds to compile + .230 seconds to elab + .280 seconds to link
+Finished rebuilding the design.
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Sep 26 20:51 2023
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The file '/home/user100/VM/AHB3_Lite_Interface_Verification/inter.vpd' was opened successfully.
+INFO   : No memory technology specified. Using generic inferred memory (tbench_top.dut.ram_inst)
+INFO   : No memory technology specified. Using generic inferred memory (rl_ram_1rw)
+--------- [DRIVER] Reset Started ---------
+--------- [DRIVER] Reset Ended ---------
+Info: "scoreboard.sv", 159: $unit: at time 25
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 0-----------------------------
+[Scoreboard] Slave is not connected.
+[Scoreboard-Slave-Not-Connected-Test-PASS] Addr = 0,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 25
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 35
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 1-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 4,
+ 	   Data :: Expected = 23f4d Actual = 23f4d
+Info: "scoreboard.sv", 199: $unit: at time 35
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 45
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 2-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 8,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 45
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 55
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 3-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Not-Ready] Slave is not ready yet.
+[Scoreboard-Not-Ready-Test-PASS] Addr = 8,
+ 	   Data :: Expected = xxxxxxxx Actual = xxxxxxxx
+Info: "scoreboard.sv", 199: $unit: at time 55
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+Info: "scoreboard.sv", 159: $unit: at time 65
+[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction 4-----------------------------
+[Scoreboard-Selection] Slave is connected.
+[Scoreboard-Ready] Slave is Ready for the transfer.
+[Scoreboard-Protection] Proctection for Data access only is Valid.
+[Scoreboard-WRITE-WORD-TEST-PASS] Addr = 8,
+ 	   Data :: Expected = 23f4d Actual = 23f4d
+Info: "scoreboard.sv", 199: $unit: at time 65
+[SCOREBOARD-LEAVE] Successfully leaving scoreboard. ----------------------------------------------------------------
+
+Summary: 
+ 	 Total no. of Transactions = 5 
+ 	 No. of Matches    = 5 
+ 	 No. of MisMatches = 0 
+
+	 TEST HAS PASSED SUCCESSFULLY. 
+
+$finish called from file "environment.sv", line 76.
+$finish at simulation time                   65
+Simulation complete, time is 65.
