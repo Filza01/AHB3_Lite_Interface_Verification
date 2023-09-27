@@ -13,7 +13,6 @@ program test(ahb3lite_bus_inf intf);
       HREADY.rand_mode(0);
       HWRITE.rand_mode(0);
       HSEL = 1;
-      //HWRITE = 1;
       HSIZE = 2;
 
       case (count)

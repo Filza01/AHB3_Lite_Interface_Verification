@@ -10,7 +10,6 @@ class driver;
         this.vif = vif;       //getting the interface
         this.gen2driv = gen2driv;     //getting the mailbox handles from  environment
         this.drv_done = drv_done;
-        //trans = new();
     endfunction
   
     //Reset task, Reset the Interface signals to default/initial values

@@ -5,7 +5,6 @@ program test(ahb3lite_bus_inf intf);
     bit [3:0] count;
 
     function void pre_randomize();
-        //$display("turn rand mode off");
       HADDR.rand_mode(0);
       HSEL.rand_mode(0);
       HSIZE.rand_mode(0);
