@@ -155,6 +155,7 @@ class scoreboard;
     task main;
         transaction trans;
         forever begin
+          trans = new();
           mon2scb.get(trans);
           $info("[SCOREBOARD-ENTER] Data successfully recieved in scoreboard. Transaction %0d-----------------------------", no_transactions);
           //trans.print_trans();

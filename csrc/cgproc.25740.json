@@ -1,0 +1,101 @@
+{
+    "Modules": {
+        "rl_ram_1rw": {
+            "Compiled": "Yes",
+            "Compiled Times": 723
+        },
+        "...MASTER...": {},
+        "test": {
+            "Compiled": "Yes",
+            "Compiled Times": 661
+        },
+        "_vcs_unit__3820026515": {
+            "Compiled": "Yes",
+            "Compiled Times": 661
+        },
+        "tbench_top": {
+            "Compiled": "Yes",
+            "Compiled Times": 666
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 724
+        },
+        "rl_queue": {
+            "Compiled": "Yes",
+            "Compiled Times": 723
+        },
+        "ahb3lite_bus_inf": {
+            "Compiled": "Yes",
+            "Compiled Times": 723
+        },
+        "ahb3lite_pkg": {
+            "Compiled": "Yes",
+            "Compiled Times": 723
+        },
+        "ahb3lite_sram1rw_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 723
+        }
+    },
+    "reusePaths": {
+        "Mk7In_d": {
+            "icPath": "csrc"
+        },
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "LWthU_d": {
+            "icPath": "csrc"
+        },
+        "reYIK_d": {
+            "icPath": "csrc"
+        },
+        "I4SNz_d": {
+            "icPath": "csrc"
+        },
+        "NECV5_d": {
+            "icPath": "csrc"
+        },
+        "xPMi9_d": {
+            "icPath": "csrc"
+        },
+        "KGFBM_d": {
+            "icPath": "csrc"
+        }
+    },
+    "CompUnits": {
+        "a34xI_d": {
+            "mode": 4,
+            "mod": "_vcs_unit__3820026515",
+            "out": "a34xI_d.o",
+            "bytes": 142054,
+            "checksum": 0,
+            "archive": "archive.723/_25740_archive_1.a"
+        },
+        "x9Hvb_d": {
+            "mode": 4,
+            "mod": "test",
+            "out": "x9Hvb_d.o",
+            "bytes": 19743,
+            "checksum": 0,
+            "archive": "archive.723/_25740_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.723/_25740_archive_1.a",
+            "objects": [
+                [
+                    "a34xI_d.o",
+                    142054
+                ],
+                [
+                    "x9Hvb_d.o",
+                    19743
+                ]
+            ],
+            "size": 161797
+        }
+    ]
+}

@@ -32,6 +32,7 @@ class driver;
   //drivers the transaction items to interface signals
     task drive;
         transaction trans;
+        trans = new();
         gen2driv.get(trans);
         `DRIV_IF.HADDR <= trans.HADDR;
         `DRIV_IF.HSEL <= trans.HSEL; 

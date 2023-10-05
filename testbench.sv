@@ -5,7 +5,7 @@
 //----------------------------------------------------------
 
 // including test files ------------------------------------        
-// `include "test_rand_wr_rd_fixed_addr.sv" 
+`include "test_rand_wr_rd_fixed_addr.sv" 
 // `include "test_wr_not_ready_in_addr_phase.sv" 
 // `include "test_rd_not_ready_in_addr_phase.sv"  
 // `include "test_wr_not_ready_in_data_phase.sv" 
